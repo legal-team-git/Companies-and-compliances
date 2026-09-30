@@ -7,6 +7,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment, PatternFill
 sys.path.insert(0, 'scripts')
 from dept_map import to_code as dept_code
+from severity import classify as severity_of, FILL as SEV_FILL, FONT as SEV_FONT
 R = 'data/'
 csv.field_size_limit(10**8)
 
@@ -253,24 +254,29 @@ def fmt(rows_out):
 
     # ---- Sheet 2: Compliance Library (one row per compliance code, full detail) ----
     ws2 = wb.create_sheet('Compliance Library')
-    _header(ws2, ['Code', 'Compliance Name', 'Full Description', 'Compliance Type', 'Department Code', 'Department Name',
-                  'Regulatory Authority', 'Act / Rule / Section', 'Form or Filing', 'Frequency / Due Date',
-                  'Applies When (plain English)', 'Verification'])
+    _header(ws2, ['Code', 'Compliance Name', 'Full Description', 'Compliance Type', 'Severity', 'Department Code',
+                  'Department Name', 'Regulatory Authority', 'Act / Rule / Section', 'Form or Filing',
+                  'Frequency / Due Date', 'Applies When (plain English)', 'Obligation Register (Consequence of Non-Compliance)',
+                  'Verification'])
     all_lib = sorted(CROSS + IND + FIN, key=lambda x: x['comp_id'])
-    lib_row = {}
+    lib_row = {}; sev_of = {}
     for r in all_lib:
         dcode = dept_code(r['department'])
+        sev = severity_of(r); sev_of[r['comp_id']] = sev
         applies_plain = ', '.join(
             re.sub(r'\s*\([A-Z0-9_|]+\)\s*$', '', TAGDESC.get(t.strip(), t.strip())).strip()
             for term in r['applies_when'].split('|') for t in term.split('&') if t.strip()
         ) if r['applies_when'] else 'All companies (universal)'
-        row = [r['comp_id'], r['compliance_name'].strip(), r.get('description', '').strip(), r['compliance_type'],
+        oblig = (r.get('obligation_register') or '').strip() or 'Not yet researched - see main compliance description'
+        row = [r['comp_id'], r['compliance_name'].strip(), r.get('description', '').strip(), r['compliance_type'], sev,
                dcode, DEPT_NAME.get(dcode, dcode), r['regulatory_authority'].strip(), r['acts_rules'].strip(),
-               r['form_or_filing'].strip(), r['frequency_or_trigger'].strip(), applies_plain[:300], r['verification']]
+               r['form_or_filing'].strip(), r['frequency_or_trigger'].strip(), applies_plain[:300], oblig, r['verification']]
         ws2.append(row)
+        ws2.cell(row=ws2.max_row, column=5).fill = PatternFill('solid', fgColor=SEV_FILL[sev])
+        ws2.cell(row=ws2.max_row, column=5).font = Font(color=SEV_FONT[sev], bold=True)
         lib_row[r['comp_id']] = r
     ws2.freeze_panes = 'A2'; ws2.auto_filter.ref = ws2.dimensions
-    for col, w in zip('ABCDEFGHIJKL', [10, 40, 55, 18, 8, 24, 30, 45, 35, 20, 45, 30]):
+    for col, w in zip('ABCDEFGHIJKLMN', [10, 40, 55, 18, 10, 8, 24, 30, 45, 35, 20, 40, 65, 30]):
         ws2.column_dimensions[col].width = w
 
     # ---- Sheet 1: Companies x Compliances (main sheet, code-referenced) ----
@@ -278,24 +284,38 @@ def fmt(rows_out):
     hdr = ['Sr. No.', 'Company Name', 'Company Type (Legal Form)', 'Ownership Type', 'Listing Status', 'NSE Ticker', 'ISIN',
            'Sector', 'Sub-Sector / Industry', 'State / Region of Operation', 'Head Office (HQ)',
            'Departments Involved (see Departments Glossary sheet)', 'Total Compliances',
-           'Compliances Applicable (code + name + essentials - full detail in Compliance Library sheet)', 'Applicability Notes']
+           'Severity Breakdown (High / Medium / Low)',
+           'Compliances Applicable (code + name + severity + essentials - full detail in Compliance Library sheet)',
+           'Obligation Register Summary (highest-risk exposure - full register in Compliance Library sheet)',
+           'Applicability Notes']
     _header(ws1, hdr)
+    SEV_ORDER = {'High': 0, 'Medium': 1, 'Low': 2}
     maxlen = 0
     for i, (e, c, sector, state, items, defin) in enumerate(rows_out, 1):
-        lines, depts = [], collections.Counter()
+        lines, depts, sevcount = [], collections.Counter(), collections.Counter()
+        worst = None  # (sev_rank, comp_id, name, obligation_text)
         for n, (r, st, unr, src) in enumerate(items, 1):
             dcode = dept_code(r['department'])
             depts[dcode] += 1
+            sev = sev_of.get(r['comp_id'], 'Medium')
+            sevcount[sev] += 1
             essentials = f"{r['compliance_type']} | {r['regulatory_authority'].strip()} | {r['acts_rules'].strip()[:70]}"
-            line = f"{n}. [{r['comp_id']}] {r['compliance_name'].strip()} - {essentials}"
+            line = f"{n}. [{r['comp_id']}] [{sev.upper()}] {r['compliance_name'].strip()} - {essentials}"
             if st == 'cond':
                 cond = '; '.join(TAGDESC.get(u, u) for u in unr)[:120]
                 line += f" [Conditional: {cond}]" if cond else ' [Conditional]'
             lines.append(line)
+            rank = SEV_ORDER[sev]
+            if worst is None or rank < worst[0]:
+                oblig = (r.get('obligation_register') or '').strip() or 'Not yet researched'
+                worst = (rank, r['comp_id'], r['compliance_name'].strip(), oblig)
         comp_txt = '\n'.join(lines)
         if len(comp_txt) > 32000:
             cut = comp_txt[:31900].rsplit('\n', 1)[0]; comp_txt = cut + f"\n... (+{len(lines) - cut.count(chr(10)) - 1} more - see Compliance Library sheet, filter by this company's codes)"
         dept_txt = '; '.join(f"{d} - {DEPT_NAME.get(d, d)} ({n})" for d, n in sorted(depts.items(), key=lambda x: -x[1]))
+        sev_txt = f"High: {sevcount['High']}; Medium: {sevcount['Medium']}; Low: {sevcount['Low']}"
+        dominant = 'High' if sevcount['High'] else ('Medium' if sevcount['Medium'] else 'Low')
+        oblig_txt = (f"[{worst[1]}] {worst[2]} - {worst[3][:250]}" if worst else 'No compliances mapped')
         sc = SC.get(e['ticker']) if e['ticker'] else None
         subsector = e['sub_sector_raw'] or (sc['industry'] if sc else '')
         reg = e['state_region'].strip()
@@ -309,10 +329,12 @@ def fmt(rows_out):
         if c.get('note'): notes.append(c['note'])
         ws1.append([i, e['name'], e['entity_type'], e['ownership'], e['listing'],
                     e['ticker'] if e['listing'].startswith('Listed') else '', e['isin'], sector, subsector, reg_txt,
-                    e['hq'] or state, dept_txt, len(items), _cap(comp_txt), '; '.join(notes)])
+                    e['hq'] or state, dept_txt, len(items), sev_txt, _cap(comp_txt), _cap(oblig_txt), '; '.join(notes)])
+        cell = ws1.cell(row=ws1.max_row, column=14)
+        cell.fill = PatternFill('solid', fgColor=SEV_FILL[dominant]); cell.font = Font(color=SEV_FONT[dominant], bold=True)
         maxlen = max(maxlen, len(comp_txt))
     ws1.freeze_panes = 'C2'; ws1.auto_filter.ref = ws1.dimensions
-    for col, w in zip('ABCDEFGHIJKLMNO', [7, 38, 22, 18, 16, 12, 15, 26, 28, 26, 22, 50, 11, 95, 55]):
+    for col, w in zip('ABCDEFGHIJKLMNOPQ', [7, 38, 22, 18, 16, 12, 15, 26, 28, 26, 22, 50, 11, 26, 95, 70, 55]):
         ws1.column_dimensions[col].width = w
 
     wb.save('India_Companies_Compliance_Master.xlsx')
