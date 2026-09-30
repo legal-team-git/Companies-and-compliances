@@ -5,8 +5,13 @@ Output : India_Companies_Compliance_Master.xlsx + data/work/excluded_non_compani
 import csv, glob, re, collections, sys
 from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment, PatternFill
+sys.path.insert(0, 'scripts')
+from dept_map import to_code as dept_code
 R = 'data/'
 csv.field_size_limit(10**8)
+
+DEPT_ROWS = list(csv.DictReader(open(R + 'library/DEPARTMENTS.csv', encoding='utf-8')))
+DEPT_NAME = {d['code']: d['department_name'] for d in DEPT_ROWS}
 
 # ---------------- load ----------------
 U = list(csv.DictReader(open(R + 'unified_companies.csv', encoding='utf-8')))
@@ -224,39 +229,73 @@ def build():
     return rows_out, excluded, rep
 
 
-def fmt(rows_out):
-    wb = Workbook(); ws = wb.active; ws.title = 'Companies x Compliances'
-    hdr = ['Sr. No.', 'Company Name', 'Company Type (Legal Form)', 'Ownership Type', 'Listing Status', 'NSE Ticker', 'ISIN', 'Sector',
-           'Sub-Sector / Industry', 'State / Region of Operation', 'Head Office (HQ)', 'Departments Involved', 'Total Compliances',
-           'Compliances Applicable (numbered)', 'Compliance Types (numbers refer to list)', 'Regulatory Authorities',
-           'Acts, Rules & Regulations', 'Forms / Returns / Filings', 'Applicability Notes']
+def _header(ws, hdr):
     ws.append(hdr)
     for cell in ws[1]:
         cell.font = Font(bold=True, color='FFFFFF'); cell.fill = PatternFill('solid', fgColor='1F3864')
         cell.alignment = Alignment(wrap_text=True, vertical='center')
+
+
+def _cap(s):
+    return s if len(s) <= 32000 else s[:31900].rsplit('\n', 1)[0] + '\n... (truncated - see Compliance Library sheet)'
+
+
+def fmt(rows_out):
+    wb = Workbook()
+
+    # ---- Sheet 3: Departments Glossary (build first, referenced by the other two) ----
+    ws3 = wb.active; ws3.title = 'Departments Glossary'
+    _header(ws3, ['Code', 'Department Name', 'What It Handles'])
+    for d in DEPT_ROWS:
+        ws3.append([d['code'], d['department_name'], d['what_it_does']])
+    ws3.freeze_panes = 'A2'; ws3.auto_filter.ref = ws3.dimensions
+    for col, w in zip('ABC', [8, 30, 90]): ws3.column_dimensions[col].width = w
+
+    # ---- Sheet 2: Compliance Library (one row per compliance code, full detail) ----
+    ws2 = wb.create_sheet('Compliance Library')
+    _header(ws2, ['Code', 'Compliance Name', 'Full Description', 'Compliance Type', 'Department Code', 'Department Name',
+                  'Regulatory Authority', 'Act / Rule / Section', 'Form or Filing', 'Frequency / Due Date',
+                  'Applies When (plain English)', 'Verification'])
+    all_lib = sorted(CROSS + IND + FIN, key=lambda x: x['comp_id'])
+    lib_row = {}
+    for r in all_lib:
+        dcode = dept_code(r['department'])
+        applies_plain = ', '.join(
+            re.sub(r'\s*\([A-Z0-9_|]+\)\s*$', '', TAGDESC.get(t.strip(), t.strip())).strip()
+            for term in r['applies_when'].split('|') for t in term.split('&') if t.strip()
+        ) if r['applies_when'] else 'All companies (universal)'
+        row = [r['comp_id'], r['compliance_name'].strip(), r.get('description', '').strip(), r['compliance_type'],
+               dcode, DEPT_NAME.get(dcode, dcode), r['regulatory_authority'].strip(), r['acts_rules'].strip(),
+               r['form_or_filing'].strip(), r['frequency_or_trigger'].strip(), applies_plain[:300], r['verification']]
+        ws2.append(row)
+        lib_row[r['comp_id']] = r
+    ws2.freeze_panes = 'A2'; ws2.auto_filter.ref = ws2.dimensions
+    for col, w in zip('ABCDEFGHIJKL', [10, 40, 55, 18, 8, 24, 30, 45, 35, 20, 45, 30]):
+        ws2.column_dimensions[col].width = w
+
+    # ---- Sheet 1: Companies x Compliances (main sheet, code-referenced) ----
+    ws1 = wb.create_sheet('Companies x Compliances', 0)
+    hdr = ['Sr. No.', 'Company Name', 'Company Type (Legal Form)', 'Ownership Type', 'Listing Status', 'NSE Ticker', 'ISIN',
+           'Sector', 'Sub-Sector / Industry', 'State / Region of Operation', 'Head Office (HQ)',
+           'Departments Involved (see Departments Glossary sheet)', 'Total Compliances',
+           'Compliances Applicable (code + name + essentials - full detail in Compliance Library sheet)', 'Applicability Notes']
+    _header(ws1, hdr)
     maxlen = 0
     for i, (e, c, sector, state, items, defin) in enumerate(rows_out, 1):
-        lines, types, depts, auth, acts, forms = [], collections.defaultdict(list), collections.Counter(), collections.OrderedDict(), collections.OrderedDict(), collections.OrderedDict()
+        lines, depts = [], collections.Counter()
         for n, (r, st, unr, src) in enumerate(items, 1):
-            line = f"{n}. {r['compliance_name'].strip()}"
+            dcode = dept_code(r['department'])
+            depts[dcode] += 1
+            essentials = f"{r['compliance_type']} | {r['regulatory_authority'].strip()} | {r['acts_rules'].strip()[:70]}"
+            line = f"{n}. [{r['comp_id']}] {r['compliance_name'].strip()} - {essentials}"
             if st == 'cond':
-                cond = '; '.join(TAGDESC.get(u, u) for u in unr)[:160]
+                cond = '; '.join(TAGDESC.get(u, u) for u in unr)[:120]
                 line += f" [Conditional: {cond}]" if cond else ' [Conditional]'
             lines.append(line)
-            types[r['compliance_type'].strip()].append(n)
-            depts[ndept(r['department'])] += 1
-            if r['regulatory_authority'].strip(): auth[r['regulatory_authority'].strip()] = 1
-            for a in re.split(r';\s*', r['acts_rules']):
-                a = a.strip()
-                if a: acts[a.lower()] = a
-            fm = r['form_or_filing'].strip()
-            if fm: forms[fm.lower()] = fm
         comp_txt = '\n'.join(lines)
         if len(comp_txt) > 32000:
-            cut = comp_txt[:31900].rsplit('\n', 1)[0]; comp_txt = cut + f"\n... (+{len(lines) - cut.count(chr(10)) - 1} more, see library files)"
-        def cap(s): return s if len(s) <= 32000 else s[:31900].rsplit('\n', 1)[0] + '\n...'
-        types_txt = '\n'.join(f"{t} ({len(v)}): #{', #'.join(map(str, v))}" for t, v in sorted(types.items()))
-        dept_txt = '; '.join(f"{d} ({n})" for d, n in sorted(depts.items(), key=lambda x: -x[1]))
+            cut = comp_txt[:31900].rsplit('\n', 1)[0]; comp_txt = cut + f"\n... (+{len(lines) - cut.count(chr(10)) - 1} more - see Compliance Library sheet, filter by this company's codes)"
+        dept_txt = '; '.join(f"{d} - {DEPT_NAME.get(d, d)} ({n})" for d, n in sorted(depts.items(), key=lambda x: -x[1]))
         sc = SC.get(e['ticker']) if e['ticker'] else None
         subsector = e['sub_sector_raw'] or (sc['industry'] if sc else '')
         reg = e['state_region'].strip()
@@ -268,11 +307,14 @@ def fmt(rows_out):
         if any(st == 'cond' for _, st, _, _ in items): notes.append('Items marked [Conditional] depend on size/activity thresholds not known for this entity')
         notes.append('State-specific laws (Shops & Establishments, Professional Tax, LWF, Fire, Trade Licence) apply per the operating state(s)')
         if c.get('note'): notes.append(c['note'])
-        ws.append([i, e['name'], e['entity_type'], e['ownership'], e['listing'], e['ticker'] if e['listing'].startswith('Listed') else '', e['isin'], sector, subsector, reg_txt, e['hq'] or state, dept_txt, len(items), comp_txt, cap(types_txt), cap('\n'.join(f"{k}. {v}" for k, v in enumerate(auth, 1))), cap('\n'.join(f"{k}. {v}" for k, v in enumerate(acts.values(), 1))), cap('\n'.join(forms.values())), '; '.join(notes)])
+        ws1.append([i, e['name'], e['entity_type'], e['ownership'], e['listing'],
+                    e['ticker'] if e['listing'].startswith('Listed') else '', e['isin'], sector, subsector, reg_txt,
+                    e['hq'] or state, dept_txt, len(items), _cap(comp_txt), '; '.join(notes)])
         maxlen = max(maxlen, len(comp_txt))
-    ws.freeze_panes = 'C2'; ws.auto_filter.ref = ws.dimensions
-    for col, w in zip('ABCDEFGHIJKLMNOPQRS', [7, 38, 22, 18, 16, 12, 15, 26, 28, 26, 22, 40, 11, 80, 45, 45, 60, 50, 50]):
-        ws.column_dimensions[col].width = w
+    ws1.freeze_panes = 'C2'; ws1.auto_filter.ref = ws1.dimensions
+    for col, w in zip('ABCDEFGHIJKLMNO', [7, 38, 22, 18, 16, 12, 15, 26, 28, 26, 22, 50, 11, 95, 55]):
+        ws1.column_dimensions[col].width = w
+
     wb.save('India_Companies_Compliance_Master.xlsx')
     return maxlen
 
