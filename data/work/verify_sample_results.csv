@@ -1,0 +1,41 @@
+id,name,found,correction_needed,note
+C05280,Elitecon International Limited,Y,N,Confirmed on screener.in (ticker ELITECON); name matches exactly.
+C00913,Malaprabha Sahakari Sakkare Karkhane,Y,N,Real cooperative sugar factory in Belagavi Karnataka; official name is "Shri Malaprabha Sahakari Sakkare Karkhane Niyamit" (also seen as "Sri Malaprabha Co-operative Sugar Factory Limited"); entity_type/ownership (Cooperative Society/Cooperative) correct.
+C00205,Kanumanek Trading Company Ltd,Y,N,Confirmed on screener.in (BSE code 504343); name matches.
+C06116,Tarapur Transformers Limited,Y,N,Confirmed on screener.in (ticker TARAPUR); name matches.
+C02260,HCL Infosystems Ltd,Y,N,Confirmed on screener.in (ticker HCL-INSYS); name matches.
+C02011,Bhagiradha Chemicals & Industries Ltd,Y,N,Confirmed on screener.in (ticker BHAGCHEM); name matches.
+C01831,DLF Limited,Y,N,Confirmed on screener.in (ticker DLF); name matches.
+C01144,Ruby Hall Clinic,Y,N,Real hospital in Pune operated by the Grant Medical Foundation (a public charitable trust, formerly Poona Medical Foundation); entity_type Trust/Society is correct. Note: a related but separate registered company "Ruby Hall Clinic Services Private Limited" (CIN U33112PN2002PTC017134) also exists for corporate purposes.
+C06075,Sumeet Industries Limited,Y,N,Confirmed on screener.in (ticker SUMEETINDS); name matches.
+C00840,Ahmedabad District Co-operative Milk Producers' Union,Y,N,Confirmed real - one of the 18 district unions under GCMMF (Amul), incorporated 1985; cooperative structure confirmed.
+C05585,Laxmi Dental Limited,Y,N,Confirmed on screener.in (ticker LAXMIDENTL); name matches.
+C06109,Syncom Formulations (India) Limited,Y,N,Confirmed on screener.in (ticker SYNCOMF); name matches.
+C04508,Manipur Food Industries Corporation Limited (MFIC),Y,N,Confirmed via CIN U15421MN1987SGC002684; classified as State Government company - entity_type Government Company (PSU) / State PSU is correct. Formerly Manipur Sugar Mills Limited.
+C00713,Gandhinagar District Central Cooperative Bank,Y,N,District Central Cooperative Banks exist for every district under Gujarat State Cooperative (GSC) Bank structure; specific CIN/registration page not directly located in search but entity type (Cooperative Society/Cooperative) is consistent with this class of institution. Distinguish from "Gandhinagar Urban Co-operative Bank" which is a different entity.
+C04879,Sant Muktabai Sahakari Sakhar Karkhana,Y,N,Confirmed via Wikipedia - cooperative sugar factory in Muktainagar, Jalgaon district, Maharashtra, founded 1988.
+C03478,Vikatan Group,Y,Y,"Vikatan Group" is a media conglomerate brand name, not itself a single registered company. The actual registered entities are "Vikatan Media Services Private Limited" (CIN U74300TN2000PTC045005) and "Vikatan.Com Private Limited" (CIN U72900TN2000PTC045004). entity_type Private Limited / Private (Indian) is directionally correct but the row should ideally reference one of the actual registered entity names.
+C00261,Birla Transasia Carpets Ltd,Y,N,Confirmed on screener.in (BSE code 503823); name matches.
+C00245,Khatau Makanji Spinning & Weaving Company Ltd,Y,N,Confirmed on screener.in (BSE code 502943); name matches.
+C00768,Gwalior District Central Cooperative Bank,Y,N,Confirmed - listed in RBI's DCCB list as "Jilla Sahakari Kendriya Bank Maryadit, Gwalior" (Hindi/transliterated form of the same institution); entity type Cooperative Society/Cooperative correct.
+C01793,Tata Communications Limited,Y,N,Confirmed on screener.in (ticker TATACOMM); name matches.
+C01910,Greenply Industries Limited,Y,N,Confirmed on screener.in (ticker GREENPLY); name matches.
+C04179,Madhya Pradesh Trade and Investment Facilitation Corporation Limited (TRIFAC),Y,N,Confirmed real - MPTRIFAC, state government single-window investment facilitation agency; Government Company (PSU)/State PSU correct.
+C04973,AGS Transact Technologies Limited,Y,N,Confirmed on screener.in (ticker AGSTRA); name matches.
+C00218,Olympic Oil Industries Ltd,Y,N,Confirmed on screener.in (BSE code 507609); name matches.
+C04638,National Safai Karamcharis Finance and Development Corporation,Y,N,Confirmed via CIN U74899DL1997NPL084652 (NSKFDC); Union/Central government-owned company under Ministry of Social Justice and Empowerment - Government Company (PSU)/Central PSU correct. Note: registered as a Section-25 (not-for-profit) company.
+C01629,Motherson Sumi Wiring India Ltd,Y,N,Confirmed on screener.in (ticker MSUMI, page title shows shortened "Motherson Wiring"); name matches.
+C05907,Rubfila International Limited,Y,N,Confirmed on screener.in (ticker RUBFILA); name matches.
+C05365,Go Fashion (India) Limited,Y,N,Confirmed on screener.in (ticker GOCOLORS); name matches.
+C05787,Pudumjee Paper Products Limited,Y,N,Confirmed on screener.in (ticker PDMJEPAPER); name matches.
+C04505,Manipur Industrial Development Corporation Limited (MANIDCO),Y,N,Confirmed via CIN U75112MN1969SGC001299; State government company (multi-functional SFC/SIDC) - Government Company (PSU)/State PSU correct. Formerly Manipur Small Industries Corporation Limited.
+C01807,Adani Enterprises Limited,Y,N,Confirmed on screener.in (ticker ADANIENT); name matches.
+C03712,Dharma Productions Private Limited,Y,N,Confirmed via CIN U92100MH1976PTC018964; Private Limited/Private (Indian) correct.
+C04869,Qube Cinema Technologies Private Limited,Y,N,Confirmed via CIN U92490TN1986PTC012536; Private Limited/Private (Indian) correct.
+C02285,Nilkamal,Y,Y,Confirmed on screener.in (ticker NILKAMAL) but the full legal name is "Nilkamal Limited" - the row's name field is missing the "Limited" suffix.
+C00054,Jeet Machine Tools Ltd,Y,N,Confirmed on screener.in (BSE code 513012); name matches.
+C06258,Vishnu Prakash R Punglia Limited,Y,N,Confirmed on screener.in (ticker VPRPL); name matches.
+C01308,Northern Arc Capital Limited,Y,N,Confirmed on screener.in (ticker NORTHARC); name matches.
+C05761,Oswal Agro Mills Limited,Y,N,Confirmed on screener.in (ticker OSWALAGRO); name matches.
+C03485,Rajasthan Patrika Private Limited,Y,N,Confirmed via CIN U22121RJ1974PTC001600; Private Limited/Private (Indian) correct; publishes Rajasthan Patrika newspaper.
+C03456,Serum Institute of India Private Limited,Y,N,Confirmed via CIN U80903PN1984PTC032945; Private Limited/Private (Indian) correct; world's largest vaccine manufacturer by volume.

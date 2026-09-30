@@ -10,10 +10,32 @@ csv.field_size_limit(10**8)
 
 # ---------------- load ----------------
 U = list(csv.DictReader(open(R + 'unified_companies.csv', encoding='utf-8')))
-CL = {}
-for f in sorted(glob.glob(R + 'work/class_out_*.csv') + glob.glob(R + 'work/nse_out_*.csv')):
-    for r in csv.DictReader(open(f, encoding='utf-8')):
-        CL[r['id']] = r
+
+
+def _norm(n):
+    n = n.lower(); n = re.sub(r'\(.*?\)', ' ', n); n = n.replace('&', ' and ')
+    n = re.sub(r'[^a-z0-9 ]', ' ', n)
+    n = re.sub(r'\b(limited|ltd|private|pvt|the|company|co|corporation|corp|india|of)\b', ' ', n)
+    return re.sub(r'\s+', ' ', n).strip()
+
+
+# Classification files are joined by NAME (not raw id) because unified_companies.csv IDs are
+# reassigned on every rebuild (file set changes shift alphabetical ordering) - id-based lookup
+# silently collides with unrelated companies across rebuilds. Each class_in/class_out pair is
+# internally self-consistent (generated together), so join on id WITHIN a pair, then key the
+# merged result by normalized company name for lookup against the current unified table.
+CL_BY_NAME = {}
+for out_f in sorted(glob.glob(R + 'work/class_out_*.csv')):
+    in_f = out_f.replace('class_out_', 'class_in_')
+    try:
+        names_by_id = {r['id']: r['name'] for r in csv.DictReader(open(in_f, encoding='utf-8'))}
+    except FileNotFoundError:
+        continue
+    for r in csv.DictReader(open(out_f, encoding='utf-8')):
+        nm = names_by_id.get(r['id'])
+        if nm:
+            CL_BY_NAME[_norm(nm)] = r
+CANON_SECTORS = {l.strip() for l in open(R + 'work/SECTOR_CANON.txt', encoding='utf-8') if l.strip()}
 SC = {}
 p = R + 'official/screener_classification.csv'
 for r in csv.DictReader(open(p, encoding='utf-8')):
@@ -153,7 +175,7 @@ def ndept(d):
 def build():
     rows_out, excluded, rep = [], [], collections.Counter()
     for e in U:
-        c = CL.get(e['id'], {})
+        c = CL_BY_NAME.get(_norm(e['name']), {})
         if c.get('is_company', 'Y') == 'N':
             excluded.append(e); continue
         sc = SC.get(e['ticker']) if e['ticker'] else None
@@ -164,6 +186,9 @@ def build():
             sector = sm['canonical_sector']
             if not e['sub_sector_raw']: e['sub_sector_raw'] = sm['sub_sector']
             if sm['fin_tag']: fin.add(sm['fin_tag'])
+        if not sector:
+            sr = re.sub(r'\s*\(.*$', '', e['sector_raw']).strip()
+            if sr in CANON_SECTORS: sector = sr
         sector = sector or 'Unclassified'
         if c.get('ownership'): e['ownership'] = c['ownership']
         state = (c.get('hq_state') or '').strip()
