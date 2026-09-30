@@ -1,0 +1,5 @@
+# Tags/vocab for industrial.csv (TAGS.txt absent; defined here)
+compliance_type: Recurring-Monthly | Recurring-Quarterly | Recurring-Annual | Event-Based | One-Time/Registration | Licence-Renewal | Continuous/Ongoing
+verification: Search-confirmed | Knowledge-based | Needs manual check
+department: Legal | Finance | HR | EHS | Quality/Regulatory | Operations | Secretariat | IT/Data | Security | Environment | Tax
+comp_id prefix: IND-<SECTORCODE>-<nn> (DEF defence, AVN aviation, SHP shipping, RLY railways, PWR power, OG oil&gas, MIN mining, STL steel, CHM chemicals, PHA pharma, MDV med devices, HSP hospitals, FDA food, AGR agri, AUT auto, TEL telecom, RE real estate, CON construction, TXT textiles, FMC FMCG, RET retail, EDU education, MED media, SPT sports, PRO professional firms, NGO NGOs, COP coop, HOS hospitality, LOG logistics, EPR EPR)
