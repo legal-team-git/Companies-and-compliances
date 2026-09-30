@@ -1,0 +1,63 @@
+Banking (Commercial/Public/Private/Small Finance/Payments Banks)
+Banking - Cooperative Banks (Urban/State/District Cooperative)
+Banking - Regional Rural Banks
+NBFC (Deposit/Non-Deposit, HFC, MFI, Infrastructure Finance, Core Investment Cos)
+Payments & Fintech (PA/PG, PPI, Account Aggregators, Digital Lending)
+Insurance (Life, General, Health, Reinsurance, Brokers/Surveyors)
+Securities/Capital Markets (Brokers, Exchanges, Depositories, AMCs, Mutual Funds, RTAs, Merchant Bankers, AIFs, PMS, Rating Agencies)
+Asset Reconstruction & Financial Services (ARCs, Credit Bureaus, Investment Advisers)
+IT/ITeS (Software, BPO/KPO, GCCs, SaaS)
+Telecom (Telecom Services, Equipment, Towers, ISPs)
+Electronics & Semiconductors (ESDM)
+Pharma (Formulations, API, CDMO)
+Biotechnology & Life Sciences
+Healthcare (Hospitals, Diagnostics, Clinical Establishments)
+Medical Devices
+Defence & Aerospace
+Aviation (Airlines, Airports, MRO, Ground Handling)
+Shipping/Ports (Shipping Lines, Major/Non-Major Ports, Logistics at Ports)
+Logistics & Warehousing
+Railways (Railway PSUs, Rolling Stock, Rail Infrastructure)
+Roads & Highways (Toll, Concessionaires)
+Power (Generation, Transmission, Distribution, Trading)
+Renewable Energy (Solar, Wind, Green Hydrogen)
+Oil & Gas (Upstream, Midstream, Downstream, CGD, Retail Fuel)
+Coal & Mining (Coal, Metals, Minerals)
+Metals & Steel (Steel, Aluminium, Copper, Foundries)
+Chemicals & Fertilisers (Specialty, Petrochemicals, Agro-chemicals)
+Cement & Building Materials
+Real Estate (Developers, REITs/InvITs, Brokers)
+Construction & Infrastructure (EPC, Contractors)
+FMCG
+Food Processing & Beverages
+Retail (Offline, Organised Retail, Jewellery)
+E-commerce (Marketplaces, Quick Commerce)
+Automobile (OEMs, Auto Components, EV, Dealerships)
+Education (Schools, Higher Education, Ed-tech, Coaching)
+Media & Entertainment (Broadcasting, OTT, Print, Advertising, Films, Gaming)
+Legal Services (Law Firms, LPO)
+Consulting & Professional Services (CA/CS/Cost firms, Management Consulting, Audit)
+Sports (Leagues, Federations, Fitness)
+Agriculture (Agri-inputs, Seeds, Agri-tech, Plantations)
+Fisheries, Dairy & Animal Husbandry
+Textiles & Apparel
+Leather & Footwear
+Gems & Jewellery
+Paper, Packaging & Printing
+Hospitality & Tourism (Hotels, Restaurants, Travel, Airlines Catering)
+Consumer Durables & Appliances
+Capital Goods & Engineering (Machinery, Industrial Equipment)
+Water, Waste Management & Environmental Services
+Cooperative (Credit/Agri/Dairy/Housing/Multi-State Cooperatives)
+Section 8/NGO (Section 8 Companies, Trusts, Societies)
+Government/PSU Holding & Public Administration (CPSEs, State PSUs, Statutory Corporations)
+Private Security & Facility Management
+Staffing & HR Services
+Gaming & Betting (Online Real Money Gaming, Lotteries)
+Space & Satellite
+Data Centres & Cloud
+Startups (DPIIT-recognised, cross-sector)
+Import/Export Trading & SEZ/EOU
+Foreign Company Branch/Liaison/Project Offices
+Diversified Conglomerates/Holding Companies
+Others

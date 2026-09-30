@@ -1,0 +1,44 @@
+# Tags used in applies_when of financial.csv (comma-separated). Style follows ALL, LISTED, PUBLIC_CO.
+ALL: every company (not used in financial.csv)
+LISTED: entity listed on a recognised stock exchange
+PUBLIC_CO: public company
+BANK_COMM: commercial banks
+BANK_SFB: small finance banks
+BANK_PAY: payments banks
+BANK_COOP: urban/state/central co-operative banks
+BANK_RRB: regional rural banks
+NBFC: non-banking financial companies (incl. NBFC-AA, NBFC-MFI where relevant)
+HFC: housing finance companies
+ARC: asset reconstruction companies
+MFI: microfinance lenders
+DIGITAL_LENDING: REs and LSPs in digital lending
+INS_LIFE: life insurers
+INS_GEN: general/health insurers
+INS_REINS: reinsurers
+INS_BROKER: insurance brokers
+TPA: third party administrators
+SEC_BROKER: stock brokers
+SEC_DP: depository participants
+SEC_RTA: registrars and transfer agents
+SEC_MB: merchant bankers
+SEC_AMC: AMCs/mutual funds
+SEC_AIF: alternative investment funds
+SEC_PMS: portfolio managers
+SEC_INVIT: infrastructure investment trusts
+SEC_REIT: real estate investment trusts
+SEC_CRA: credit rating agencies
+SEC_IA: investment advisers
+SEC_RA: research analysts
+SEC_MII: stock exchanges, depositories, clearing corporations
+PAY_PA: payment aggregators/gateways
+PAY_PPI: prepaid payment instrument issuers
+PAY_TREDS: TReDS platforms
+PAY_AA: account aggregators
+PMLA_RE: reporting entities under PMLA
+FATCA_RE: reporting financial institutions (FATCA/CRS)
+PENSION: PFRDA-regulated entities (NPS)
+IFSC: IFSCA-regulated units in GIFT City
+CHIT: chit fund foremen
+NIDHI: Nidhi companies
+FOREX_AD: authorised dealers (AD-I/II/III)
+FOREX_FFMC: full fledged money changers

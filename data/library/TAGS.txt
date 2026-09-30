@@ -1,0 +1,81 @@
+# TAG VOCABULARY for applies_when in cross_sector.csv
+# Syntax: tags joined by '&' (AND) or '|' (OR); no parentheses. 'A&B|C' is evaluated as (A&B) OR C (AND binds tighter than OR).
+# Verification column convention (first token exact): "Search-confirmed" | "Knowledge-based" | "Needs manual check", optionally followed by " - note".
+# --- Entity form ---
+ALL            every entity (any form)
+COMPANY        any company under Companies Act 2013 (PUBLIC_CO|PRIVATE_CO|OPC|SEC8)
+PUBLIC_CO      public limited company
+PRIVATE_CO     private limited company (excl. OPC)
+OPC            One Person Company
+LLP            Limited Liability Partnership
+SEC8           Section 8 (not-for-profit) company
+PARTNERSHIP    Partnership firm / proprietorship (non-corporate)
+TRUST_SOCIETY  Trust or registered Society (non-company)
+COOP           Cooperative society
+FOREIGN_CO     Foreign company / Indian branch, liaison or project office
+LISTED         equity or debt securities listed on a recognised stock exchange
+DEBT_LISTED    listed NCDs/debt securities
+GOVT_CO        Government company (Companies Act s.2(45))
+PSU            Central/State public sector undertaking
+MNC            subsidiary/branch of a multinational
+SMALL_CO       'small company' per Companies Act s.2(85)
+LARGE_CO       above thresholds for specific provisions (see row description)
+NBFC_ENTITY    RBI-registered NBFC
+# --- Size / scale ---
+EMP_ANY        has at least 1 employee
+EMP10          10+ employees (POSH ICC, ESI in many cases)
+EMP20          20+ employees (EPF, Grievance Committee etc.)
+EMP50          50+ employees (crèche, etc.)
+EMP100         100+ employees
+EMP300         300+ workers (Standing Orders / retrenchment approval)
+TURNOVER_GST_THRESHOLD  aggregate turnover above GST registration threshold
+AATO_5CR / AATO_10CR    GST aggregate annual turnover of Rs5cr / Rs10cr+
+AUDIT_APPLICABLE  income-tax audit u/s 44AB applicable
+NETWORTH_THRESH  net worth/turnover/profit thresholds for CSR / cost audit / secretarial audit etc.
+# --- Activity ---
+FACTORY        operates a factory (power: 10+ workers; no power: 20+; State may vary)
+CONTRACT_LABOUR engages contractors/contract workers (threshold 50 under OSH Code)
+MIGRANT_WORKERS inter-state migrant workers
+CSR            Companies Act s.135 thresholds met (net worth Rs500cr / turnover Rs1000cr / net profit Rs5cr)
+FOREIGN_INVESTMENT  has foreign direct investment (FDI) / foreign shareholder
+ODI            makes overseas investment (outbound)
+ECB            external commercial borrowing
+FOREIGN_LIABILITY_ASSET  holds foreign assets/liabilities (FLA return)
+IMPORT_EXPORT  imports/exports goods or services
+EXPORT_SERVICES exports services
+TP_INTL        international / specified domestic transactions (transfer pricing)
+GST_REG        GST registered
+GST_RCM        liable to reverse charge
+GST_ECOM       e-commerce operator
+TDS_DEDUCTOR   deducts TDS (TAN holder)
+TCS_COLLECTOR  collects TCS
+HAS_DATA       processes digital personal data (DPDP Act)
+CHILD_DATA     processes children's data
+SDF            Significant Data Fiduciary (as notified)
+INTERMEDIARY   IT Act intermediary
+HAS_IT_SYSTEMS operates computer resources/networks (CERT-In directions)
+HAZ_WASTE      generates/handles hazardous waste
+EWASTE         producer/manufacturer/refurbisher/recycler of electronics
+PLASTIC_PACK   producer/importer/brand-owner of plastic packaging
+BATTERY        producer/importer of batteries
+POLLUTING      industry in Red/Orange/Green category needing consent (Water/Air Acts)
+EMPLOYS_WOMEN  women employees
+PACKAGED_GOODS packaged commodities / weights & measures
+FOOD_BIZ       food business operator
+DRUG_BIZ       manufactures/sells drugs/cosmetics
+MSME_VENDORS   buys from MSME suppliers
+UDYAM_ELIGIBLE eligible MSME manufacturing/service unit
+CHARITABLE     claims exemption as charitable/religious entity
+FCRA           receives foreign contribution
+REAL_ESTATE_PROJECT promoter of real-estate project
+COMBINATION    merger/acquisition/combination crossing Competition Act thresholds
+BENEFICIAL_OWNERSHIP entity with significant beneficial owners
+PMLA_REPORTING_ENTITY reporting entity under PMLA (banks, FIs, intermediaries, casinos, notified DNFBPs)
+DEPOSITS       accepts deposits / receives money treated as deposit
+CHARGES        creates/modifies charges on assets
+TRADEMARK_IP   holds registered trademark/patent/design/copyright
+# --- Sector tags (SECTOR:<key>); key = short name from SECTORS.txt ---
+SECTOR:BANKING SECTOR:NBFC SECTOR:INSURANCE SECTOR:CAPMKT SECTOR:TELECOM SECTOR:PHARMA SECTOR:HEALTHCARE SECTOR:MEDDEVICE
+SECTOR:DEFENCE SECTOR:AVIATION SECTOR:SHIPPING SECTOR:RAILWAYS SECTOR:POWER SECTOR:OILGAS SECTOR:MINING SECTOR:REALESTATE
+SECTOR:CONSTRUCTION SECTOR:FOOD SECTOR:ECOMMERCE SECTOR:AUTO SECTOR:EDUCATION SECTOR:MEDIA SECTOR:LEGAL SECTOR:SPORTS
+SECTOR:AGRI SECTOR:COOP SECTOR:GAMING SECTOR:SECURITY SECTOR:STAFFING SECTOR:HOSPITALITY SECTOR:PAYMENTS
