@@ -1,0 +1,92 @@
+comp_id,compliance_name,acts_rules,file
+CS-058,LLP beneficial ownership disclosure,LLP Amendment provisions,cross_sector
+CS-062,Trust/society annual filings,Societies Registration Act 1860 / State Public Trust Acts,cross_sector
+CS-075,Equalisation levy (Form 1),Finance Act 2016 Chapter VIII,cross_sector
+CS-103,Professional Tax employer enrolment (PTEC),State PT Acts,cross_sector
+CS-120,Apprentices Act engagement and reporting,Apprentices Act 1961,cross_sector
+CS-121,Employment Exchange notification,Employment Exchanges (CNV) Act 1959,cross_sector
+CS-143,Ozone-depleting substances,Ozone Depleting Substances (Regulation and Control) Rules 2000,cross_sector
+CS-146,DPDP reasonable security safeguards,DPDP Act 2023 s.8; DPDP Rules 2025,cross_sector
+CS-147,DPDP data principal rights and grievance redressal,DPDP Act 2023 ss.11-14,cross_sector
+CS-148,DPDP data retention and erasure,DPDP Act 2023 s.8(7); Rules 2025,cross_sector
+CS-149,DPDP children's data verifiable parental consent,DPDP Act 2023 s.9,cross_sector
+CS-150,DPDP Significant Data Fiduciary duties,DPDP Act 2023 s.10,cross_sector
+CS-156,Cyber-security audit for critical information infrastructure,IT Act 2000 s.70,cross_sector
+CS-193,Shops and Establishment - signage,State S&E Acts,cross_sector
+CS-197,Local trade licence,State Municipal Acts,cross_sector
+CS-202,Lift and electrical inspection,Electricity Act 2003; State Lift Acts,cross_sector
+IND-DEF-03,Defence licence annual production returns,IDRA 1951,industrial
+IND-DEF-09,Defence Procurement Manual/DAP compliance for bids,Defence Acquisition Procedure 2020 (as amended); Needs manual check for DAP 2026 status,industrial
+IND-DEF-10,Defence offset obligation discharge,"DAP 2020 Chapter/Appendix on offsets [Scheme/Policy, not a statute]",industrial
+IND-DEF-11,Offset annual/periodic claim submission,"DAP 2020 offset guidelines [Scheme/Policy, not a statute]",industrial
+IND-DEF-12,Indigenous content certification,DAP 2020; Public Procurement (Preference to Make in India) Order 2017,industrial
+IND-DEF-16,Explosives storage licence,Explosives Act 1884; Explosives Rules 2008,industrial
+IND-DEF-18,Explosives import licence,Explosives Act 1884; Explosives Rules 2008,industrial
+IND-DEF-22,DGAQA (aeronautical QA) approval,Administrative approvals,industrial
+IND-DEF-23,CEMILAC design certification,Administrative (DRDO),industrial
+IND-DEF-25,Security clearance for facility,Official Secrets Act 1923; MoD security manual,industrial
+IND-DEF-28,Import licence (defence items) under FTP,FT(D&R) Act 1992,industrial
+IND-DEF-32,Drone registration & operations (defence-adjacent),Drone Rules 2021 (Needs manual check for subsequent Bill/amendments),industrial
+IND-AVN-15,Ground handling licence,Administrative policy; Needs manual check,industrial
+IND-AVN-16,DGCA drone operator/remote pilot,Drone Rules 2021 (status Needs manual check),industrial
+IND-SHP-04,Ship registration,Merchant Shipping Act 1958 / MSA 2025,industrial
+IND-SHP-05,Statutory ship surveys and certificates,"Merchant Shipping Act 1958 / 2025; SOLAS, MARPOL",industrial
+IND-SHP-09,Coastal vessels permits (licence to non-Indian ships),Merchant Shipping Act,industrial
+IND-SHP-10,Oil pollution/MARPOL certificate (IOPP),Merchant Shipping Act 1958 / 2025; MARPOL,industrial
+IND-SHP-12,Non-major port compliance (State Maritime Board),Indian Ports Act 1908 (repealed by Indian Ports Act 2025 - status Needs manual check),industrial
+IND-SHP-13,Indian Ports Act 2025,Indian Ports Act 2025,industrial
+IND-PWR-09,Renewable Purchase Obligation (RPO) compliance,Electricity Act 2003 s.86(1)(e); Energy Conservation Act 2001,industrial
+IND-PWR-13,Carbon Credit Trading Scheme compliance,"Energy Conservation (Amendment) Act 2022; Needs manual check [Scheme/Policy, not a statute]",industrial
+IND-OG-06,Petroleum transport vehicle licence,Petroleum Rules 2002,industrial
+IND-OG-13,Oilfields (Regulation and Development) Amendment Act 2025,Oilfields (Regulation and Development) Amendment Act 2025,industrial
+IND-STL-03,Metal recycling / scrap EPR,Administrative,industrial
+IND-CHM-04,"Occupational Safety, Health and Working Conditions Code 2020","Occupational Safety, Health and Working Conditions Code 2020",industrial
+IND-CHM-12,"Petroleum, Chemicals and Petrochemical Investment Region (PCPIR) compliance","Administrative [Scheme/Policy, not a statute]",industrial
+IND-PHA-02,Schedule M GMP compliance,Drugs Rules 1945 Schedule M,industrial
+IND-PHA-20,"Drugs, Medical Devices and Cosmetics Bill","Drugs, Medical Devices and Cosmetics Bill (proposed)",industrial
+IND-HSP-14,Digital Personal Data Protection compliance for patient data,Digital Personal Data Protection Act 2023; DPDP Rules 2025 (phased commencement - Needs manual check),industrial
+IND-AGR-04,Pesticide Management Bill status,Pesticide Management Bill (proposed),industrial
+IND-AGR-07,Seed Bill status,Seeds Bill (proposed),industrial
+IND-TEL-08,WPC equipment licence / ETA,Indian Wireless Telegraphy Act 1933 (repealed) - Telecommunications Act 2023,industrial
+IND-TEL-09,ISP licence compliance,Telecommunications Act 2023,industrial
+IND-TEL-15,Broadcasting infrastructure IP-I registration,Telecommunications Act 2023,industrial
+IND-CON-06,Labour codes status,Code on Wages 2019; IR Code 2020; SS Code 2020; OSH Code 2020,industrial
+IND-TXT-06,Textile Labelling: Textile (Consumer Protection) Regulations,Consumer Protection Act,industrial
+IND-EDU-02,Viksit Bharat Shiksha Adhishthan Bill,VBSA Bill 2025 (proposed),industrial
+IND-EDU-11,Trust/society education institution tax exemption,Income-tax Act 1961 / 2025 (Needs manual check),industrial
+IND-MED-10,Broadcasting Services Bill,Broadcasting Services (Regulation) Bill (draft),industrial
+IND-PRO-02,BCI Rules on foreign law firms,Advocates Act 1961,industrial
+IND-NGO-02,FCRA quarterly receipt disclosure,FCRA Rules 2011,industrial
+IND-NGO-05,Section 12A/12AB registration,Income-tax Act 1961 (Act of 2025 status Needs manual check),industrial
+IND-COP-09,National Cooperative Policy 2025,"Administrative [Scheme/Policy, not a statute]",industrial
+IND-EPR-10,End-of-life vehicle EPR,CMVR,industrial
+IND-EPR-11,Solid Waste Management Rules 2016 replaced by 2026 Rules?,Environment Protection Act 1986,industrial
+FIN-016,Cyber security framework and incident reporting,RBI Cyber Security Framework in Banks 2016; Master Direction on IT Governance 2023,financial
+FIN-021,Return of unclaimed liabilities Sec 26,Banking Regulation Act 1949 Sec 26,financial
+FIN-027,Co-operative bank audit and AGM,Banking Regulation Act 1949; State Co-operative Societies Acts,financial
+FIN-030,NABARD Development Financial Institution supervision returns,NABARD Act 1981,financial
+FIN-031,NBFC Certificate of Registration,RBI Act 1934 Sec 45-IA,financial
+FIN-038,NBFC monthly return on important financial parameters,RBI NBFC returns directions,financial
+FIN-047,Housing Finance Company registration,National Housing Bank Act 1987; RBI Housing Finance Companies Directions 2025,financial
+FIN-048,HFC returns and regulatory compliance,National Housing Bank Act 1987; RBI HFC Directions,financial
+FIN-049,HFC fair practices and interest rate,National Housing Bank Act 1987; RBI Directions,financial
+FIN-058,SRO membership for microfinance,RBI Framework for Self-Regulatory Organisations 2024,financial
+FIN-064,Actuarial appointment and valuation report,Insurance Act 1938; IRDAI Actuarial Report regulations,financial
+FIN-065,Public disclosures by insurers,IRDAI (Insurers) Public Disclosures Regulations,financial
+FIN-071,TPA licence and renewal,IRDAI (Health Insurance) Regulations 2016; TPA Regulations,financial
+FIN-072,TPA annual reporting,IRDAI (Health Insurance) Regulations 2016,financial
+FIN-073,KYC of policyholders and AML/CFT for insurers,IRDAI Master Guidelines on AML/CFT 2022; PMLA 2002,financial
+FIN-074,Insurance Repository and e-insurance account rules,IRDAI (Insurance Repositories) Regulations,financial
+FIN-119,Card tokenisation and authentication compliance,RBI Master Direction on Card-not-present transactions and tokenisation,financial
+FIN-121,TReDS operational reporting,RBI TReDS Guidelines 2018,financial
+FIN-133,Money laundering risk assessment,PMLA 2002,financial
+FIN-140,Central Recordkeeping Agency compliance,PFRDA (Central Recordkeeping Agency) Regulations 2015,financial
+FIN-141,NPS Trust and custodian reporting,PFRDA (Custodian of Securities) Regulations 2015,financial
+FIN-142,Pension fund NAV and portfolio disclosure,PFRDA (Pension Fund) Regulations 2015,financial
+FIN-145,IFSC finance company compliance,IFSCA (Finance Company) Regulations 2021,financial
+FIN-146,IFSC capital market intermediary compliance,IFSCA (Capital Market Intermediaries) Regulations 2021,financial
+FIN-147,IFSC fund management compliance,IFSCA (Fund Management) Regulations 2022,financial
+FIN-148,IFSC insurance office compliance,IFSCA (Registration and Operations of IIO) Regulations 2021,financial
+FIN-149,IFSC SEZ unit compliance,SEZ Act 2005,financial
+FIN-152,Chit foreman deposit,Chit Funds Act 1982 Sec 20,financial
+FIN-159,FFMC returns and audit,Master Direction Money Changing Activities 2015,financial
