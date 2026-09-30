@@ -47,6 +47,10 @@ INDIAN_STATES = [
 STATE_GOV_RE = re.compile(
     r"govern(?:ment|or)\s+of\s+(" + "|".join(INDIAN_STATES) + r")", re.I
 )
+# e.g. "Gujarat State Petroleum Corporation", "Maharashtra State Electricity..."
+STATE_ENTITY_RE = re.compile(
+    r"(" + "|".join(INDIAN_STATES) + r")\s+state\b", re.I
+)
 
 # Well-known central PSUs that themselves act as promoters of subsidiaries
 KNOWN_CENTRAL_PSU_PARENTS = [
@@ -133,6 +137,8 @@ def classify_ownership(promoter_name):
     if m:
         return "State PSU"
     if "governor of" in name:
+        return "State PSU"
+    if STATE_ENTITY_RE.search(name):
         return "State PSU"
     if CENTRAL_PARENT_RE.search(name):
         return "Central PSU"
