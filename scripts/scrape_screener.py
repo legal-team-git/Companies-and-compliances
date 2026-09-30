@@ -29,6 +29,6 @@ def work():
         with lock:
             with open(OUT,'a',newline='',encoding='utf-8') as f:
                 csv.writer(f).writerow([sym,vals.get('Broad Sector',''),vals.get('Sector',''),vals.get('Broad Industry',''),vals.get('Industry',''),st])
-        time.sleep(1.0)
-ts=[threading.Thread(target=work) for _ in range(3)]
+        time.sleep(0.5)
+ts=[threading.Thread(target=work) for _ in range(8)]
 [t.start() for t in ts]; [t.join() for t in ts]; print('finished',flush=True)
