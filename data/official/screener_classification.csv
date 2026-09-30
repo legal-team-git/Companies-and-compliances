@@ -1,0 +1,150 @@
+symbol,broad_sector,sector,broad_industry,industry,status
+BPCL,Energy,"Oil, Gas & Consumable Fuels",Petroleum Products,Refineries & Marketing,ok
+COALINDIA,Energy,"Oil, Gas & Consumable Fuels",Consumable Fuels,Coal,ok
+BHEL,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,ok
+IOC,Energy,"Oil, Gas & Consumable Fuels",Petroleum Products,Refineries & Marketing,ok
+GAIL,Energy,"Oil, Gas & Consumable Fuels",Gas,Gas Transmission/Marketing,ok
+ONGC,Energy,"Oil, Gas & Consumable Fuels",Oil,Oil Exploration & Production,ok
+NTPC,Utilities,Power,Power,Power Generation,ok
+POWERGRID,Utilities,Power,Power,Power - Transmission,ok
+SAIL,Commodities,Metals & Mining,Ferrous Metals,Iron & Steel,ok
+HAL,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,ok
+BEL,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,ok
+PFC,Financial Services,Financial Services,Finance,Financial Institution,ok
+RECLTD,Financial Services,Financial Services,Finance,Financial Institution,ok
+HINDPETRO,Energy,"Oil, Gas & Consumable Fuels",Petroleum Products,Refineries & Marketing,ok
+CONCOR,Services,Services,Transport Services,Logistics Solution Provider,ok
+NMDC,Commodities,Metals & Mining,Minerals & Mining,Industrial Minerals,ok
+NHPC,Utilities,Power,Power,Power Generation,ok
+SJVN,Utilities,Power,Power,Power Generation,ok
+OIL,Energy,"Oil, Gas & Consumable Fuels",Oil,Oil Exploration & Production,ok
+RVNL,Industrials,Construction,Construction,Civil Construction,ok
+IRCTC,Consumer Discretionary,Consumer Services,Leisure Services,"Tour, Travel Related Services",ok
+IRFC,Financial Services,Financial Services,Finance,Financial Institution,ok
+MAZDOCK,Industrials,Capital Goods,Industrial Manufacturing,Ship Building & Allied Services,ok
+COCHINSHIP,Industrials,Capital Goods,Industrial Manufacturing,Ship Building & Allied Services,ok
+GRSE,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,ok
+BDL,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,ok
+BEML,Industrials,Capital Goods,"Agricultural, Commercial & Construction Vehicles",Construction Vehicles,ok
+MIDHANI,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,ok
+NATIONALUM,Commodities,Metals & Mining,Non - Ferrous Metals,Aluminium,ok
+HINDCOPPER,Commodities,Metals & Mining,Non - Ferrous Metals,Copper,ok
+MMTC,Services,Services,Commercial Services & Supplies,Trading & Distributors,ok
+ENGINERSIN,Industrials,Construction,Construction,Civil Construction,ok
+RITES,Industrials,Construction,Construction,Civil Construction,ok
+IRCON,Industrials,Construction,Construction,Civil Construction,ok
+NBCC,Industrials,Construction,Construction,Civil Construction,ok
+NFL,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,ok
+RCF,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,ok
+CHENNPETRO,Energy,"Oil, Gas & Consumable Fuels",Petroleum Products,Refineries & Marketing,ok
+MRPL,Energy,"Oil, Gas & Consumable Fuels",Petroleum Products,Refineries & Marketing,ok
+MTNL,Telecommunication,Telecommunication,Telecom - Services,Telecom - Cellular & Fixed line services,ok
+ITI,Telecommunication,Telecommunication,Telecom -  Equipment & Accessories,Telecom -  Equipment & Accessories,ok
+SCI,Services,Services,Transport Services,Shipping,ok
+DREDGECORP,Services,Services,Engineering Services,Dredging,ok
+HMT,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,ok
+KIOCL,Commodities,Metals & Mining,Ferrous Metals,Sponge Iron,ok
+MOIL,Commodities,Metals & Mining,Minerals & Mining,Industrial Minerals,ok
+NLCINDIA,Utilities,Power,Power,Power Generation,ok
+NTPCGREEN,Utilities,Power,Power,Power Generation,ok
+EDUCONSULT,,,,,http404
+BHARATCOAL,Energy,"Oil, Gas & Consumable Fuels",Consumable Fuels,Coal,ok
+BLAL,Financial Services,Financial Services,Finance,Investment Company,ok
+STCINDIA,Services,Services,Commercial Services & Supplies,Trading & Distributors,ok
+ITDC,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,ok
+BALMLAWRIE,Diversified,Diversified,Diversified,Diversified,ok
+BLIL,Financial Services,Financial Services,Finance,Holding Company,ok
+FACT,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,ok
+MADRASFERT,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,ok
+HUDCO,Financial Services,Financial Services,Finance,Financial Institution,ok
+IREDA,Financial Services,Financial Services,Finance,Financial Institution,ok
+RAILTEL,Telecommunication,Telecommunication,Telecom - Services,Other Telecom Services,ok
+ANDREWYU,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,ok
+PETRONET,Energy,"Oil, Gas & Consumable Fuels",Gas,LPG/CNG/PNG/LNG Supplier,ok
+LICI,Financial Services,Financial Services,Insurance,Life Insurance,ok
+GICRE,Financial Services,Financial Services,Insurance,General Insurance,ok
+SBIN,Financial Services,Financial Services,Banks,Public Sector Bank,ok
+BANKBARODA,Financial Services,Financial Services,Banks,Public Sector Bank,ok
+PNB,Financial Services,Financial Services,Banks,Public Sector Bank,ok
+CANBK,Financial Services,Financial Services,Banks,Public Sector Bank,ok
+UNIONBANK,Financial Services,Financial Services,Banks,Public Sector Bank,ok
+INDIANB,Financial Services,Financial Services,Banks,Public Sector Bank,ok
+BANKINDIA,Financial Services,Financial Services,Banks,Public Sector Bank,ok
+CENTRALBK,Financial Services,Financial Services,Banks,Public Sector Bank,ok
+MAHABANK,Financial Services,Financial Services,Banks,Public Sector Bank,ok
+IOB,Financial Services,Financial Services,Banks,Public Sector Bank,ok
+PSB,Financial Services,Financial Services,Banks,Public Sector Bank,ok
+UCOBANK,Financial Services,Financial Services,Banks,Public Sector Bank,ok
+HDFCBANK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+ICICIBANK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+AXISBANK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+KOTAKBANK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+INDUSINDBK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+YESBANK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+IDFCFIRSTB,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+FEDERALBNK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+SOUTHBANK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+KARURVYSYA,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+CUB,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+TMB,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+KTKBANK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+RBLBANK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+BANDHANBNK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+CSBBANK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+DCBBANK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+DHANBANK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+J&KBANK,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+IDBI,Financial Services,Financial Services,Banks,Private Sector Bank,ok
+AUBANK,Financial Services,Financial Services,Banks,Other Bank,ok
+UJJIVANSFB,Financial Services,Financial Services,Banks,Other Bank,ok
+EQUITASBNK,Financial Services,Financial Services,Banks,Other Bank,ok
+JSFB,Financial Services,Financial Services,Banks,Other Bank,ok
+CAPITALSFB,Financial Services,Financial Services,Banks,Other Bank,ok
+ESAFSFB,Financial Services,Financial Services,Banks,Other Bank,ok
+SURYODAY,Financial Services,Financial Services,Banks,Other Bank,ok
+UTKARSHBNK,Financial Services,Financial Services,Banks,Other Bank,ok
+FINOPB,Financial Services,Financial Services,Banks,Other Bank,ok
+HDFCLIFE,Financial Services,Financial Services,Insurance,Life Insurance,ok
+SBILIFE,Financial Services,Financial Services,Insurance,Life Insurance,ok
+ICICIPRULI,Financial Services,Financial Services,Insurance,Life Insurance,ok
+CANHLIFE,Financial Services,Financial Services,Insurance,Life Insurance,ok
+NIACL,Financial Services,Financial Services,Insurance,General Insurance,ok
+ICICIGI,Financial Services,Financial Services,Insurance,General Insurance,ok
+GODIGIT,Financial Services,Financial Services,Insurance,General Insurance,ok
+STARHEALTH,Financial Services,Financial Services,Insurance,General Insurance,ok
+NIVABUPA,Financial Services,Financial Services,Insurance,General Insurance,ok
+BAJFINANCE,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
+BAJAJFINSV,Financial Services,Financial Services,Finance,Holding Company,ok
+BAJAJHFL,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+BAJAJHLDNG,Financial Services,Financial Services,Finance,Holding Company,ok
+CHOLAFIN,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
+CHOLAHLDNG,Financial Services,Financial Services,Finance,Investment Company,ok
+SHRIRAMFIN,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
+MUTHOOTFIN,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
+MUTHOOTMF,Financial Services,Financial Services,Finance,Microfinance Institutions,ok
+MUTHOOTCAP,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
+MANAPPURAM,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
+M&MFIN,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
+LTF,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
+POONAWALLA,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
+ABCAPITAL,Financial Services,Financial Services,Finance,Investment Company,ok
+PNBHOUSING,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+LICHSGFIN,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+CANFINHOME,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+AAVAS,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+HOMEFIRST,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+APTUS,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+REPCOHOME,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+INDIASHLTR,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+AADHARHFC,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+GICHSGFIN,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+SAMMAANCAP,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+PIRAMALFIN,Financial Services,Financial Services,Finance,Housing Finance Company,ok
+SUNDARMFIN,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
+MASFIN,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
+CREDITACC,Financial Services,Financial Services,Finance,Microfinance Institutions,ok
+SPANDANA,Financial Services,Financial Services,Finance,Microfinance Institutions,ok
+SATIN,Financial Services,Financial Services,Finance,Microfinance Institutions,ok
+FUSION,Financial Services,Financial Services,Finance,Microfinance Institutions,ok
+UJJIVAN,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
+IIFL,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),ok
