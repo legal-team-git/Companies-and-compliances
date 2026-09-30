@@ -64,6 +64,10 @@ SECTOR_ATTR = {
     'PLASTIC_PACK': {'FMCG', 'Food Processing & Beverages', 'Consumer Durables & Appliances', 'Retail', 'E-commerce', 'Chemicals & Fertilisers', 'Pharma', 'Paper, Packaging & Printing'},
     'BATTERY': {'Automobile', 'Electronics & Semiconductors', 'Renewable Energy', 'Consumer Durables & Appliances'},
     'INTERMEDIARY': {'E-commerce', 'Media & Entertainment', 'IT/ITeS', 'Payments & Fintech', 'Gaming & Betting', 'Telecom', 'Data Centres & Cloud', 'Education'},
+    'PMLA_REPORTING_ENTITY': {'Banking', 'Banking - Cooperative Banks', 'Banking - Regional Rural Banks', 'NBFC', 'Payments & Fintech',
+                              'Insurance', 'Securities/Capital Markets', 'Asset Reconstruction & Financial Services',
+                              'Real Estate', 'Gems & Jewellery', 'Gaming & Betting'},
+    'FCRA': {'Section 8/NGO'},
     'HAS_DATA': set(), 'HAS_IT_SYSTEMS': set(), 'CHARITABLE': {'Section 8/NGO'},
 }
 ALL_DATA_SECTORS_EXCLUDED = set()  # HAS_DATA / HAS_IT_SYSTEMS true for every company (any organisation holds personal data)
@@ -128,9 +132,9 @@ def eval_tags(expr, defin, sector, big):
                 continue
             if tg in SECTOR_ATTR and SECTOR_ATTR[tg]:
                 if sector in SECTOR_ATTR[tg]: continue
-                unresolved.append(tg) if tg in ('CHARITABLE',) is False else None
-                if tg in ('FACTORY', 'GST_ECOM', 'FOOD_BIZ', 'REAL_ESTATE_PROJECT', 'CHARITABLE', 'PACKAGED_GOODS', 'EWASTE', 'PLASTIC_PACK', 'BATTERY', 'INTERMEDIARY', 'HAZ_WASTE', 'POLLUTING'):
-                    ok = False; break  # sector says the activity does not apply
+                if tg in ('FACTORY', 'GST_ECOM', 'FOOD_BIZ', 'REAL_ESTATE_PROJECT', 'CHARITABLE', 'PACKAGED_GOODS', 'EWASTE',
+                          'PLASTIC_PACK', 'BATTERY', 'INTERMEDIARY', 'HAZ_WASTE', 'POLLUTING', 'PMLA_REPORTING_ENTITY', 'FCRA'):
+                    ok = False; break  # sector/entity type says this does not apply - hard exclude, not merely conditional
                 unresolved.append(tg); continue
             if tg in ('HAS_DATA', 'HAS_IT_SYSTEMS', 'EMPLOYS_WOMEN'): continue
             if tg in BIG_TRUE and big: continue
