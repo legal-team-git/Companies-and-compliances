@@ -118,6 +118,9 @@ IND_SECTORS = {
     'HOS': {'Hospitality & Tourism'}, 'MDV': {'Medical Devices'}, 'CON': {'Construction & Infrastructure', 'Roads & Highways', 'Real Estate'},
     'RET': {'Retail', 'E-commerce'}, 'COP': {'Cooperative'}, 'LOG': {'Logistics & Warehousing'}, 'STL': {'Metals & Steel'},
     'TXT': {'Textiles & Apparel', 'Leather & Footwear'}, 'SPT': {'Sports'}, 'RLY': {'Railways'}, 'FMC': {'FMCG', 'Consumer Durables & Appliances'},
+    'SEC': {'Private Security & Facility Management'},
+    'BIO': {'Pharma', 'Biotechnology & Life Sciences', 'Agriculture', 'FMCG'},
+    'FOR': {'Coal & Mining', 'Oil & Gas', 'Power', 'Renewable Energy', 'Construction & Infrastructure', 'Roads & Highways'},
 }
 FIN_SECTORS = {'Banking', 'Banking - Cooperative Banks', 'Banking - Regional Rural Banks', 'NBFC', 'Payments & Fintech', 'Insurance',
                'Securities/Capital Markets', 'Asset Reconstruction & Financial Services'}
