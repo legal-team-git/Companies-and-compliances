@@ -1,0 +1,18 @@
+Transition ID,Family / topic,Effective-date / review note,Change,Required system treatment,Source IDs,Source URLs
+TR01,Income tax,From 1 April 2026 for new tax-year regime,2025 Act/2026 Rules coexist with saved 1961 periods,"Choose regime from the reporting period and transaction, not submission date. Preserve correction workflows for old periods.","TAXTRANS,TAX,T138","https://www.incometaxindia.gov.in/documents/20117/43120/Updated-FQAs-on-Interplay&Transitions.pdf/dda21cfd-28be-d931-ad5c-6459ecbd2ea7?download=true&t=1775128133037&version=2.0
+https://www.incometaxindia.gov.in/income-tax-act-20251_old
+https://www.incometax.gov.in/iec/foportal/newformpage/forms/form138-um"
+TR02,Director KYC,31 March 2026,Annual KYC replaced with a three-year cycle,"For directors already compliant, ICAI states next filing 30 June 2028. Keep event updates/reactivation separate.",CORP,https://icai.org/post/23656
+TR03,Central labour forms,2026 final central rules,Wages I/IV/V/IX; SS XXII/XXIII; separate OSH forms,"Resolve appropriate government, state rule, chapter and transition. Sharing records does not automatically cancel another statutory obligation.","WAGE,SS,OSH,IR","https://www.labour.gov.in/static/uploads/2026/05/6eb0c35ba63b776487a025e5123b6b12.pdf
+https://www.labour.gov.in/static/uploads/2026/05/49aa9b62c2125499c37399b90e969d67.pdf
+https://www.labour.gov.in/static/uploads/2026/05/ee246f790cad0b8e99c3828f34fa09a6.pdf
+https://www.labour.gov.in/static/uploads/2026/05/f05a2c220dcdec0ea9c55e84d9ff791f.pdf"
+TR04,DPDP rules,Staged from November 2025 notification,Some rules immediate; rule 4 after one year; many substantive rules after 18 months,Keep readiness requirements distinct from effective statutory duties. Map Act commencement separately.,DPDP,https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf
+TR05,Boilers,1 May 2025,Boilers Act 2025 replaces earlier principal Act,Migrate source identity without deleting valid asset certificates or ignoring subordinate-rule savings.,BOILER,https://www.pib.gov.in/PressReleasePage.aspx?PRID=2230140
+TR06,Solid waste,1 April 2026,Solid Waste Management Rules 2026 replace 2016 framework,Rebuild role/applicability/template mapping; do not copy old form numbers unreviewed.,"SWM,SWMP","https://www.pib.gov.in/PressReleasePage.aspx?PRID=2219676&lang=1&reg=3
+https://swm.cpcb.gov.in/"
+TR07,Construction and demolition waste,2025 rule family; applicability requires current instrument review,CPCB lists 2025 rules alongside 2016 history,Separate new producer/EPR duties from generator/site controls. Resolve effective dates before tasks activate.,CDW,https://cpcb.gov.in/rules-7/
+TR08,Biomedical waste,17 April 2026 amendment listed by CPCB,2016 base rules plus 2026 amendment,Compare amended provisions and current annual-report / incident schemas before deploying legacy templates.,BMW,https://cpcb.gov.in/rules-3/
+TR09,SEBI listed-entity reporting,2026 consolidated instruments / current exchange schemas,Use integrated financial/governance reporting where applicable,Retain historical schemas for old periods and corrections; do not duplicate replaced filings.,SEBI,https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListingAll=yes&search=Listing
+TR10,FSSAI milk-return legacy,Current validation gate,D-1 verified; legacy D-2 not assumed active,Do not ship D-2 half-yearly task from an old checklist without a current source.,"FSSAI,FOSCOS","https://www.fssai.gov.in/upload/advisories/2024/04/661e73c35373eRevised%20annual%20return.pdf
+https://foscos.fssai.gov.in/annualreturn/"

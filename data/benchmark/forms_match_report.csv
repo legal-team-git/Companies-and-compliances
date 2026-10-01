@@ -1,0 +1,418 @@
+artifact_id,artifact_name,family,status,best_match_comp_id,best_match_name,match_score
+A001,AOC-4 variants,Companies,MATCHED,CS-001,Annual financial statements filing (AOC-4),1.0
+A002,MGT-7 / MGT-7A,Companies,MATCHED,CS-002,Annual return filing (MGT-7 / MGT-7A),1.0
+A003,MGT-8,Companies,MATCHED,CS-059,Section 8 licence conditions and annual compliance,1.0
+A004,ADT-1,Companies,MATCHED,CS-003,Appointment of statutory auditor (ADT-1),1.0
+A005,DIR-12,Companies,MATCHED,CS-022,Appointment of director / KMP (DIR-12),1.0
+A006,DIR-3 KYC Web,Companies,MATCHED,CS-004,Director KYC (DIR-3 KYC),1.0
+A007,no blanket annual task.,Companies,MATCHED,CS-059,Section 8 licence conditions and annual compliance,0.5
+A008,DPT-3,Companies,MATCHED,CS-005,Return of deposits / exempted deposits (DPT-3),1.0
+A009,MSME-1,Companies,MATCHED,CS-006,Half-yearly MSME payment outstanding return (MSME Form I),1.0
+A010,link payment data from F04.,Companies,GAP,CS-006,,0.33
+A011,PAS-3,Companies,MATCHED,CS-035,Return of allotment (PAS-3),1.0
+A012,PAS-6,Companies,MATCHED,CS-036,"Private placement offer (PAS-4/PAS-5, PAS-6)",1.0
+A013,MGT-14,Companies,MATCHED,CS-015,Annual General Meeting,1.0
+A014,CHG-1 / CHG-9,Companies,MATCHED,CS-033,Charge creation/modification (CHG-1 / CHG-9),1.0
+A015,CHG-4,Companies,MATCHED,CS-034,Satisfaction of charge (CHG-4),1.0
+A016,BEN-1,Companies,MATCHED,CS-010,Register of beneficial owners / SBO declaration (BEN-2),1.0
+A017,BEN-2,Companies,MATCHED,CS-010,Register of beneficial owners / SBO declaration (BEN-2),1.0
+A018,BEN-3,Companies,MATCHED,CS-004,Director KYC (DIR-3 KYC),0.67
+A019,MGT-4 / MGT-5,Companies,MATCHED,CS-011,Notice to members on SBO (MGT-4/5 / s.90 notices),1.0
+A020,MGT-6,Companies,MATCHED,CS-015,Annual General Meeting,1.0
+A021,CSR-2,Companies,MATCHED,CS-007,CSR annual report filing (CSR-2),1.0
+A022,CRA-2,Companies,MATCHED,CS-029,"Cost audit and CRA filings (CRA-2, CRA-4)",1.0
+A023,CRA-4,Companies,MATCHED,CS-029,"Cost audit and CRA filings (CRA-2, CRA-4)",1.0
+A024,MR-3,Companies,MATCHED,CS-028,Secretarial audit (MR-3),1.0
+A025,IEPF transfer / disclosure forms,Companies,MATCHED,CS-047,"Investor Education and Protection Fund transfers (IEPF-1, IEPF-2)",0.75
+A026,INC-20A,Companies,MATCHED,CS-012,Active company tagging (INC-20A) commencement declaration,1.0
+A027,INC-22,Companies,MATCHED,CS-013,Registered office verification and change,1.0
+A028,MBP-1,Companies,MATCHED,CS-018,Statutory registers maintenance,1.0
+A029,Statutory registers and board / general-meeting minutes,Companies,MATCHED,CS-016,"Secretarial Standards compliance (SS-1, SS-2)",0.71
+A030,LLP Form 8,Limited liability partnerships,MATCHED,IND-PRO-05,LLP annual return Form 11,0.6
+A031,LLP Form 11,Limited liability partnerships,MATCHED,IND-PRO-05,LLP annual return Form 11,0.8
+A032,LLP Form 3,Limited liability partnerships,MATCHED,IND-PRO-05,LLP annual return Form 11,0.6
+A033,LLP Form 4,Limited liability partnerships,MATCHED,IND-PRO-05,LLP annual return Form 11,0.6
+A034,LLP Form 15,Limited liability partnerships,MATCHED,IND-PRO-05,LLP annual return Form 11,0.6
+A035,LLP beneficial-interest / SBO records,Limited liability partnerships,GAP,CS-011,,0.38
+A036,Partnership registration application,Partnership firms,MATCHED,CS-074,TAN / PAN registration,0.5
+A037,Partner / constitution change notice,Partnership firms,MATCHED,CS-054,LLP partner/designated partner changes (Form 4),0.5
+A038,Dissolution notice,Partnership firms,GAP,,,
+A039,Partnership deed and amendments,Partnership firms,GAP,,,
+A040,MSME supplier-status evidence,MSME delayed-payment controls,GAP,CS-006,,0.29
+A041,Invoice acceptance and ageing ledger,MSME delayed-payment controls,GAP,CS-006,,0.25
+A042,Delayed-payment / interest computation,MSME delayed-payment controls,MATCHED,CS-181,Payment to MSME suppliers within 45 days,0.5
+A043,MSME-1 supporting schedule,MSME delayed-payment controls,MATCHED,CS-006,Half-yearly MSME payment outstanding return (MSME Form I),0.43
+A044,do not count twice.,MSME delayed-payment controls,GAP,CS-006,,0.25
+A045,MSEFC claim bundle,MSME delayed-payment controls,GAP,CS-006,,0.29
+A046,GSTR-1,GST,MATCHED,CS-079,GSTR-1 outward supply return,0.67
+A047,GSTR-1A,GST,MATCHED,CS-087,GST RCM compliance,0.67
+A048,GSTR-3B,GST,MATCHED,CS-087,GST RCM compliance,1.0
+A049,IFF,GST,GAP,,,
+A050,GSTR-9,GST,MATCHED,CS-087,GST RCM compliance,1.0
+A051,GSTR-9C,GST,MATCHED,CS-082,GSTR-9C reconciliation statement,0.67
+A052,GSTR-4,GST,MATCHED,CS-087,GST RCM compliance,1.0
+A053,CMP-08,GST,MATCHED,CS-089,"GST annual return for composition dealers (CMP-08, GSTR-4)",1.0
+A054,GSTR-6,GST,MATCHED,CS-093,GST Invoice Registration (IMS) and ISD,1.0
+A055,GSTR-7,GST,MATCHED,CS-088,"GST TDS/TCS (GSTR-7, GSTR-8)",1.0
+A056,GSTR-8,GST,MATCHED,CS-088,"GST TDS/TCS (GSTR-7, GSTR-8)",1.0
+A057,RFD-01,GST,MATCHED,CS-090,GST refund claim (RFD-01),1.0
+A058,RFD-11 / LUT,GST,MATCHED,CS-091,LUT for exports (GST RFD-11),1.0
+A059,REG-01,GST,MATCHED,CS-078,GST registration,1.0
+A060,EWB-01 / e-waybill,GST,MATCHED,CS-084,E-way bill generation,0.6
+A061,E-invoice IRN / signed invoice data,GST,MATCHED,CS-083,E-invoicing (IRN),0.5
+A062,GSTR-2B,GST,MATCHED,CS-086,GSTR-2B ITC reconciliation,0.67
+A063,not a taxpayer-filed return.,GST,MATCHED,CS-078,GST registration,0.5
+A064,Form 138 (new,"Income tax, TDS and TCS",MATCHED,CS-064,Income-tax TDS deduction and payment,0.5
+A065,earlier 24Q),"Income tax, TDS and TCS",MATCHED,CS-065,TDS quarterly return,0.67
+A066,manual checked.,"Income tax, TDS and TCS",MATCHED,CS-064,Income-tax TDS deduction and payment,0.5
+A067,Form 140 (new,"Income tax, TDS and TCS",MATCHED,CS-064,Income-tax TDS deduction and payment,0.5
+A068,earlier 26Q),"Income tax, TDS and TCS",MATCHED,CS-065,TDS quarterly return,0.67
+A069,Form 143 (new,"Income tax, TDS and TCS",MATCHED,CS-064,Income-tax TDS deduction and payment,0.5
+A070,earlier 27EQ),"Income tax, TDS and TCS",MATCHED,CS-065,TDS quarterly return,0.67
+A071,Form 144 (new,"Income tax, TDS and TCS",MATCHED,CS-064,Income-tax TDS deduction and payment,0.5
+A072,earlier 27Q),"Income tax, TDS and TCS",MATCHED,CS-065,TDS quarterly return,0.67
+A073,Form 141 (new consolidated form),"Income tax, TDS and TCS",MATCHED,CS-064,Income-tax TDS deduction and payment,0.43
+A074,24Q / 26Q / 27Q / 27EQ (saved periods),"Income tax, TDS and TCS",MATCHED,CS-065,TDS quarterly return,0.7
+A075,not default for new tax years.,"Income tax, TDS and TCS",GAP,CS-064,,0.38
+A076,Applicable ITR schema,"Income tax, TDS and TCS",MATCHED,CS-061,"Charitable entity audit and return (Form 10B/10BB, ITR-7)",0.5
+A077,FY 2025-26 return remains under saved regime.,"Income tax, TDS and TCS",GAP,CS-064,,0.36
+A078,3CA / 3CB / 3CD (saved periods),"Income tax, TDS and TCS",MATCHED,CS-070,Tax audit report (3CA/3CB-3CD),0.56
+A079,"TDS certificates, regime-specific","Income tax, TDS and TCS",MATCHED,CS-066,TDS certificates (Form 16/16A),0.57
+A080,Tax payment challan,"Income tax, TDS and TCS",MATCHED,CS-064,Income-tax TDS deduction and payment,0.83
+A081,Remittance declaration / accountant certificate,"Income tax, TDS and TCS",MATCHED,CS-073,Form 15CA / 15CB for foreign remittance,0.5
+A082,professional approval where required.,"Income tax, TDS and TCS",MATCHED,CS-064,Income-tax TDS deduction and payment,0.43
+A083,SFT / transfer-pricing / other specified reports,"Income tax, TDS and TCS",MATCHED,CS-071,Transfer pricing report (Form 3CEB),0.5
+A084,exact forms and thresholds require review.,"Income tax, TDS and TCS",GAP,CS-064,,0.38
+A085,Bill of Entry,Customs,MATCHED,CS-163,Import payment and BoE closure (IDPMS),0.67
+A086,Shipping Bill,Customs,MATCHED,IND-TXT-01,Textile export: RoSCTL/RoDTEP claims,1.0
+A087,Import / export manifest,Customs,MATCHED,IND-DEF-08,Arms import/export permission,0.5
+A088,Bond / warehouse inventory records,Customs,MATCHED,IND-SHP-16,Customs Broker/Bonded warehouse (port-related),0.4
+A089,Concessional import consumption statement,Customs,GAP,,,
+A090,Duty challan and clearance order,Customs,MATCHED,IND-STL-04,Anti-dumping duty compliance,0.4
+A091,IEC application / annual confirmation,Foreign trade / DGFT,MATCHED,IND-DEF-13,SCOMET export authorisation,0.67
+A092,ANF authorisation applications,Foreign trade / DGFT,MATCHED,IND-DEF-13,SCOMET export authorisation,0.83
+A093,e-BRC,Foreign trade / DGFT,MATCHED,IND-DEF-08,Arms import/export permission,0.6
+A094,Export obligation / EODC submission,Foreign trade / DGFT,MATCHED,IND-DEF-08,Arms import/export permission,0.57
+A095,RCMC / renewal documentation,Foreign trade / DGFT,MATCHED,IND-DEF-08,Arms import/export permission,0.5
+A096,FC-GPR,Foreign exchange / cross-border investment,MATCHED,FIN-160,Foreign Investment reporting FC-GPR FC-TRS,0.57
+A097,FC-TRS,Foreign exchange / cross-border investment,MATCHED,FIN-160,Foreign Investment reporting FC-GPR FC-TRS,0.57
+A098,Form DI,Foreign exchange / cross-border investment,GAP,IND-DEF-26,,0.33
+A099,LLP-I / LLP-II,Foreign exchange / cross-border investment,GAP,CS-160,,0.38
+A100,ESOP / CN reporting,Foreign exchange / cross-border investment,GAP,FIN-160,,0.38
+A101,FLA return,Foreign exchange / cross-border investment,MATCHED,FIN-022,Foreign Exchange returns by Authorised Dealer banks,0.5
+A102,Overseas investment Form FC,Foreign exchange / cross-border investment,MATCHED,CS-160,"FEMA ODI reporting (Form FC / ODI Part I, II)",0.43
+A103,Annual Performance Report (APR),Foreign exchange / cross-border investment,GAP,CS-160,,0.29
+A104,ECB / ECB-2,Foreign exchange / cross-border investment,MATCHED,FIN-022,Foreign Exchange returns by Authorised Dealer banks,0.57
+A105,SOFTEX,Foreign exchange / cross-border investment,GAP,IND-DEF-26,,0.33
+A106,State VAT return,Residual state VAT / CST,GAP,,,
+A107,VAT payment challan,Residual state VAT / CST,GAP,CS-064,,0.33
+A108,CST declaration / C-form workflow,Residual state VAT / CST,GAP,CS-192,,0.29
+A109,Commodity stock / sales register,Residual state VAT / CST,GAP,IND-DEF-07,,0.38
+A110,PT registration / enrolment,Professional tax,MATCHED,CS-102,Professional Tax registration and payment,0.8
+A111,PT deduction register,Professional tax,MATCHED,CS-102,Professional Tax registration and payment,0.8
+A112,PT challan,Professional tax,MATCHED,CS-102,Professional Tax registration and payment,0.75
+A113,PT return,Professional tax,MATCHED,CS-102,Professional Tax registration and payment,1.0
+A114,E-stamp / stamp payment certificate,Stamp duty and registration,MATCHED,CS-102,Professional Tax registration and payment,0.5
+A115,Document-registration application,Stamp duty and registration,MATCHED,IND-RE-08,Stamp duty & registration,0.6
+A116,Duty adjudication / valuation submission,Stamp duty and registration,MATCHED,IND-RE-08,Stamp duty & registration,0.5
+A117,Registered instrument / index / receipt,Stamp duty and registration,MATCHED,IND-RE-08,Stamp duty & registration,0.43
+A118,Central Wages Form I,Wages,MATCHED,IND-CON-06,Labour codes status,0.67
+A119,resolve applicable government.,Wages,GAP,,,
+A120,Central Wages Form IV,Wages,MATCHED,IND-CON-06,Labour codes status,0.67
+A121,Central Wages Form V,Wages,MATCHED,IND-CON-06,Labour codes status,0.67
+A122,Central Wages Form IX,Wages,MATCHED,IND-CON-06,Labour codes status,0.67
+A123,Minimum-wage / overtime calculation evidence,Wages,MATCHED,CS-122,Code on Wages 2019,0.5
+A124,Bonus determination / payment records,Wages,MATCHED,CS-100,Payment of Bonus,0.6
+A125,EPFO ECR,Social security,MATCHED,CS-095,EPF registration and monthly contribution,1.0
+A126,resolve current legal transition.,Social security,GAP,CS-095,,0.33
+A127,ESIC contribution data / challan,Social security,MATCHED,CS-097,ESI registration and contribution,0.83
+A128,EPF / ESI member joining-exit data,Social security,MATCHED,CS-123,Code on Social Security 2020,0.5
+A129,Common Wages Forms I / IV / V / IX,Social security,GAP,CS-099,,0.38
+A130,do not duplicate shared records.,Social security,GAP,CS-095,,0.29
+A131,Social Security Form XXII,Social security,MATCHED,CS-095,EPF registration and monthly contribution,0.67
+A132,Social Security Form XXIII,Social security,MATCHED,CS-095,EPF registration and monthly contribution,0.67
+A133,not OSH Form XXIII.,Social security,MATCHED,IND-CON-06,Labour codes status,0.6
+A134,Gratuity nomination / benefit claim / payment records,Social security,MATCHED,CS-099,Payment of Gratuity,0.62
+A135,Maternity benefit notices / payment records,Social security,MATCHED,CS-108,Maternity Benefit compliance,0.71
+A136,Employment injury / compensation records,Social security,MATCHED,CS-118,Employees' Compensation insurance,0.5
+A137,Construction cess assessment / payment data,Social security,MATCHED,CS-099,Payment of Gratuity,0.43
+A138,Vacancy notification / employment return,Social security,MATCHED,CS-095,EPF registration and monthly contribution,0.4
+A139,OSH Form I,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.71
+A140,OSH Form VI,"Occupational safety, factories and contract labour",MATCHED,IND-CON-04,Contract Labour licence,0.71
+A141,OSH Form VIII,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A142,OSH Form XI,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A143,OSH Form XII,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A144,OSH Form XIII,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A145,OSH Form XIV,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A146,OSH Form XV,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A147,OSH Form XVI,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A148,OSH Form XVII,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A149,OSH Form XVIII,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A150,OSH Form XIX,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A151,OSH Form XX,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A152,OSH Form XXI,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A153,OSH Form XXIII,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.57
+A154,Site safety assessment / training / inspection evidence,"Occupational safety, factories and contract labour",MATCHED,CS-106,Contract Labour licence,0.4
+A155,Standing orders / certification application,Industrial relations,MATCHED,CS-114,Industrial Employment (Standing Orders),0.83
+A156,Grievance committee constitution / case record,Industrial relations,MATCHED,CS-116,Grievance Redressal Committee,0.57
+A157,Change-in-service-condition notice,Industrial relations,MATCHED,CS-115,Industrial Disputes retrenchment/layoff notice,0.57
+A158,Lay-off / retrenchment / closure notice or permission,Industrial relations,MATCHED,CS-115,Industrial Disputes retrenchment/layoff notice,0.67
+A159,Settlement / conciliation records,Industrial relations,MATCHED,CS-114,Industrial Employment (Standing Orders),0.4
+A160,State S&E registration / intimation,Shops and establishments,MATCHED,IND-RET-01,Shops & Establishments registration,0.71
+A161,Attendance / wage / leave registers,Shops and establishments,GAP,CS-016,,0.33
+A162,Working-hours / weekly-holiday notices,Shops and establishments,GAP,CS-101,,0.29
+A163,State annual / consolidated return,Shops and establishments,MATCHED,CS-101,Shops and Establishments registration/renewal,0.75
+A164,Registration renewal / change / closure,Shops and establishments,MATCHED,CS-101,Shops and Establishments registration/renewal,0.67
+A165,LWF contribution register,Labour welfare fund,MATCHED,CS-113,Labour Welfare Fund contribution,0.83
+A166,LWF challan,Labour welfare fund,MATCHED,CS-113,Labour Welfare Fund contribution,0.8
+A167,LWF return / statement,Labour welfare fund,MATCHED,CS-113,Labour Welfare Fund contribution,0.8
+A168,Holiday list / statutory notice,National and festival holidays,GAP,,,
+A169,Holiday-work permission / intimation,National and festival holidays,GAP,,,
+A170,Holiday work / compensatory benefit record,National and festival holidays,GAP,,,
+A171,IC constitution order,POSH,MATCHED,CS-104,POSH internal committee,0.5
+A172,POSH policy / awareness evidence,POSH,MATCHED,CS-104,POSH internal committee,0.5
+A173,IC annual report,POSH,MATCHED,CS-104,POSH internal committee,1.0
+A174,Employer annual-report disclosure,POSH,GAP,,,
+A175,Confidential complaint / inquiry / action record,POSH,GAP,,,
+A176,Apprenticeship contract,Apprenticeships,GAP,,,
+A177,Training schedule / attendance record,Apprenticeships,GAP,,,
+A178,Stipend payment record,Apprenticeships,GAP,,,
+A179,Apprenticeship prescribed return / portal report,Apprenticeships,MATCHED,CS-120,Apprentices Act engagement and reporting,0.5
+A180,Age-verification evidence,Child and adolescent labour,MATCHED,CS-119,Child and adolescent labour prohibition,0.5
+A181,Permitted adolescent employment register,Child and adolescent labour,MATCHED,CS-119,Child and adolescent labour prohibition,0.5
+A182,Prescribed inspector notice / workplace abstract,Child and adolescent labour,GAP,CS-119,,0.38
+A183,Equal opportunity policy,Disability inclusion,GAP,,,
+A184,Disability employment / accommodation records,Disability inclusion,GAP,,,
+A185,Accessibility assessment and action record,Disability inclusion,GAP,,,
+A186,Equal opportunity policy,Transgender workplace protections,GAP,CS-104,,0.33
+A187,Complaint-officer appointment,Transgender workplace protections,GAP,IND-RET-04,,0.33
+A188,Confidential complaint / resolution record,Transgender workplace protections,GAP,,,
+A189,Trade / health licence application,Municipal trade and health permissions,MATCHED,CS-197,Local trade licence,0.67
+A190,Local renewal / amendment submission,Municipal trade and health permissions,GAP,CS-197,,0.38
+A191,Sanitation / premises inspection evidence,Municipal trade and health permissions,GAP,CS-197,,0.25
+A192,Fire approval / NOC application,Fire and life safety,MATCHED,CS-134,Fire NOC and renewal,0.5
+A193,Fire-system maintenance / inspection log,Fire and life safety,MATCHED,IND-RLY-06,Commissioner of Railway Safety authorisation,0.43
+A194,Fire-drill / training record,Fire and life safety,GAP,CS-134,,0.33
+A195,Licensed agency / fire-safety certificate,Fire and life safety,MATCHED,CS-134,Fire NOC and renewal,0.5
+A196,Building-plan / land-use application,"Building, planning and land use",GAP,IND-DEF-13,,0.33
+A197,Completion / occupancy certificate,"Building, planning and land use",MATCHED,IND-RE-07,Occupation certificate & completion,0.43
+A198,Structural stability assessment / certificate,"Building, planning and land use",GAP,IND-DEF-14,,0.25
+A199,Change-of-use / alteration permission,"Building, planning and land use",GAP,,,
+A200,Electrical inspection / energisation application,Electrical installation safety,MATCHED,IND-PWR-08,Electrical Inspector approval for installations,0.67
+A201,Electrical test / earthing / maintenance records,Electrical installation safety,GAP,IND-RLY-06,,0.29
+A202,Electrical safety / competent-person certificate,Electrical installation safety,MATCHED,IND-PWR-08,Electrical Inspector approval for installations,0.5
+A203,Electrical accident notification,Electrical installation safety,MATCHED,IND-DEF-19,Explosives accident reporting,0.4
+A204,Energy consumption / action report,Energy conservation,MATCHED,IND-PWR-09,Renewable Purchase Obligation (RPO) compliance,0.75
+A205,Accredited energy-audit report,Energy conservation,MATCHED,IND-PWR-12,Energy audit and energy manager appointment,0.75
+A206,Energy efficiency / scheme compliance submission,Energy conservation,MATCHED,IND-PWR-11,BEE PAT scheme compliance,0.67
+A207,Product label / registration documentation,Energy conservation,GAP,IND-PWR-09,,0.33
+A208,Boiler registration / inspection application,Boilers,MATCHED,CS-135,Boilers and pressure vessels certificate,0.6
+A209,Boiler certificate / permission to use,Boilers,MATCHED,CS-135,Boilers and pressure vessels certificate,0.5
+A210,Boiler inspection / operating log,Boilers,MATCHED,CS-135,Boilers and pressure vessels certificate,0.4
+A211,Repair / alteration / accident notice,Boilers,MATCHED,IND-MIN-10,Mine accident/dangerous occurrence notice,0.4
+A212,Petroleum site-plan approval,Petroleum storage and handling,MATCHED,IND-CHM-01,MSIHC Rules storage of hazardous chemicals,0.5
+A213,Category-specific petroleum licence / renewal,Petroleum storage and handling,MATCHED,CS-142,Petroleum/explosives licence,0.43
+A214,Storage / handling / safety inspection log,Petroleum storage and handling,GAP,CS-141,,0.33
+A215,Petroleum incident report,Petroleum storage and handling,MATCHED,CS-142,Petroleum/explosives licence,0.5
+A216,Gas cylinder / filling / storage licence application,Gas cylinders and pressure vessels,MATCHED,IND-OG-07,Gas Cylinder Rules 2016 licences,0.56
+A217,Pressure-vessel licence / approval,Gas cylinders and pressure vessels,MATCHED,IND-OG-08,SMPV(U) Rules compliance,0.43
+A218,Cylinder / vessel periodic test certificate,Gas cylinders and pressure vessels,GAP,CS-135,,0.33
+A219,Cylinder inventory / test-due register,Gas cylinders and pressure vessels,GAP,IND-OG-07,,0.33
+A220,Gas leak / incident response record,Gas cylinders and pressure vessels,GAP,CS-135,,0.25
+A221,Vehicle registration / RC,Vehicles and transport operations,MATCHED,IND-AUT-06,Vehicle scrappage RVSF registration,0.5
+A222,Fitness application / certificate,Vehicles and transport operations,MATCHED,IND-AVN-01,Air Operator Certificate (Scheduled/Non-scheduled),0.5
+A223,Transport permit / authorisation,Vehicles and transport operations,MATCHED,IND-DEF-17,Explosives transport licence,0.4
+A224,PUC certificate,Vehicles and transport operations,MATCHED,IND-AVN-01,Air Operator Certificate (Scheduled/Non-scheduled),0.4
+A225,Vehicle tax / insurance / driver credential register,Vehicles and transport operations,GAP,CS-060,,0.22
+A226,PSARA licence / renewal application,Private security agencies,MATCHED,IND-DEF-06,Arms licence renewal,0.43
+A227,Guard / supervisor / client registers,Private security agencies,GAP,,,
+A228,Antecedent verification record,Private security agencies,GAP,,,
+A229,Training / fitness evidence,Private security agencies,GAP,,,
+A230,Water consent application / renewal,Water pollution consent,MATCHED,CS-127,Consent to Establish/Operate (Water/Air),0.6
+A231,Effluent testing report,Water pollution consent,MATCHED,IND-TXT-05,Effluent discharge consent (dyeing units),0.6
+A232,Water / effluent monitoring log,Water pollution consent,MATCHED,IND-TXT-05,Effluent discharge consent (dyeing units),0.5
+A233,Consent-condition compliance submission,Water pollution consent,GAP,CS-127,,0.33
+A234,Air consent application / renewal,Air pollution consent,MATCHED,CS-127,Consent to Establish/Operate (Water/Air),0.6
+A235,Stack / ambient emission test report,Air pollution consent,GAP,CS-127,,0.29
+A236,Emission control / monitoring log,Air pollution consent,GAP,CS-127,,0.29
+A237,Air consent compliance submission,Air pollution consent,MATCHED,CS-127,Consent to Establish/Operate (Water/Air),0.4
+A238,Environment Statement Form V,Environmental protection and statement,MATCHED,CS-128,Environmental statement (Form V),1.0
+A239,Pollutant / resource-use working papers,Environmental protection and statement,GAP,CS-128,,0.38
+A240,Environmental standards compliance evidence,Environmental protection and statement,MATCHED,CS-128,Environmental statement (Form V),0.5
+A241,EC application and project particulars,Environmental clearance,MATCHED,CS-144,Environmental clearance,0.5
+A242,EIA / EMP and supporting studies,Environmental clearance,MATCHED,CS-144,Environmental clearance,0.5
+A243,Post-EC compliance report,Environmental clearance,MATCHED,CS-144,Environmental clearance,0.6
+A244,Environmental clearance and condition register,Environmental clearance,MATCHED,CS-144,Environmental clearance,0.5
+A245,Hazardous Waste Form 1,"Hazardous waste, used oil and tyre branches",MATCHED,CS-129,Hazardous waste authorisation and return,0.43
+A246,Hazardous Waste Form 3,"Hazardous waste, used oil and tyre branches",MATCHED,IND-EPR-08,Tyre EPR,0.43
+A247,Hazardous Waste Form 4,"Hazardous waste, used oil and tyre branches",MATCHED,CS-129,Hazardous waste authorisation and return,0.43
+A248,Hazardous Waste Form 10,"Hazardous waste, used oil and tyre branches",MATCHED,CS-130,Hazardous waste manifest,0.43
+A249,Hazardous Waste Form 11,"Hazardous waste, used oil and tyre branches",MATCHED,IND-EPR-08,Tyre EPR,0.43
+A250,Waste labels / transporter / disposal evidence,"Hazardous waste, used oil and tyre branches",GAP,IND-EPR-08,,0.3
+A251,Used-oil EPR registration / returns,"Hazardous waste, used oil and tyre branches",MATCHED,IND-EPR-08,Tyre EPR,0.44
+A252,Waste-tyre EPR registration / returns,"Hazardous waste, used oil and tyre branches",MATCHED,IND-EPR-08,Tyre EPR,0.44
+A253,Plastic EPR registration,Plastic waste / packaging EPR,MATCHED,CS-132,Plastic EPR registration and annual return,0.8
+A254,Plastic EPR annual / prescribed return,Plastic waste / packaging EPR,MATCHED,CS-132,Plastic EPR registration and annual return,0.6
+A255,Packaging-category / quantity ledger,Plastic waste / packaging EPR,MATCHED,CS-132,Plastic EPR registration and annual return,0.43
+A256,EPR certificates and reconciliation,Plastic waste / packaging EPR,MATCHED,CS-132,Plastic EPR registration and annual return,0.5
+A257,E-waste portal registration,E-waste,MATCHED,CS-131,E-waste EPR registration and annual return,1.0
+A258,E-waste prescribed periodic / annual return,E-waste,MATCHED,CS-131,E-waste EPR registration and annual return,0.5
+A259,EEE placement / recycling ledger,E-waste,GAP,CS-131,,0.33
+A260,EPR certificate reconciliation,E-waste,MATCHED,CS-131,E-waste EPR registration and annual return,0.6
+A261,Bulk-consumer authorised handover evidence,E-waste,GAP,CS-131,,0.29
+A262,Battery EPR registration,Battery waste,MATCHED,CS-133,Battery EPR registration and return,1.0
+A263,Battery producer / recycler / refurbisher return,Battery waste,MATCHED,CS-133,Battery EPR registration and return,0.4
+A264,Battery category / quantity ledger,Battery waste,MATCHED,CS-133,Battery EPR registration and return,0.4
+A265,Battery EPR certificate reconciliation,Battery waste,MATCHED,CS-133,Battery EPR registration and return,0.6
+A266,Waste segregation / handover ledger,Solid waste,MATCHED,CS-140,Solid waste management,0.4
+A267,Bulk-generator registration / declaration,Solid waste,GAP,CS-131,,0.33
+A268,Prescribed 2026 portal return,Solid waste,MATCHED,IND-EPR-11,Solid Waste Management Rules 2016 replaced by 2026 Rules?,0.6
+A269,Waste processing / service-provider evidence,Solid waste,GAP,CS-140,,0.33
+A270,BMW authorisation application,Biomedical waste,MATCHED,IND-HSP-05,BMW authorisation,0.8
+A271,BMW annual report,Biomedical waste,MATCHED,IND-HSP-05,BMW authorisation,1.0
+A272,BMW accident report,Biomedical waste,MATCHED,IND-HSP-05,BMW authorisation,0.75
+A273,BMW generation / handover / barcode record,Biomedical waste,MATCHED,IND-HSP-05,BMW authorisation,0.43
+A274,BMW staff training / health evidence,Biomedical waste,MATCHED,IND-HSP-05,BMW authorisation,0.43
+A275,C&D waste-management plan,Construction and demolition waste,MATCHED,IND-CON-08,C&D waste management,0.71
+A276,C&D waste quantity / movement ledger,Construction and demolition waste,GAP,IND-CON-08,,0.38
+A277,C&D registration / EPR submission,Construction and demolition waste,GAP,CS-131,,0.38
+A278,Recycling / disposal certificates,Construction and demolition waste,GAP,IND-EPR-15,,0.33
+A279,ELV producer / facility registration,End-of-life vehicles,MATCHED,IND-AUT-06,Vehicle scrappage RVSF registration,0.43
+A280,ELV prescribed return / EPR report,End-of-life vehicles,MATCHED,IND-EPR-10,End-of-life vehicle EPR,0.67
+A281,Vehicle scrapping / recycling evidence,End-of-life vehicles,MATCHED,IND-AUT-06,Vehicle scrappage RVSF registration,0.43
+A282,ELV EPR certificate reconciliation,End-of-life vehicles,MATCHED,IND-EPR-10,End-of-life vehicle EPR,0.57
+A283,Groundwater NOC / renewal application,Groundwater abstraction,MATCHED,CS-134,Fire NOC and renewal,0.4
+A284,Abstraction meter / water-level log,Groundwater abstraction,GAP,,,
+A285,Groundwater compliance / audit report,Groundwater abstraction,MATCHED,CS-049,Compliance certificate / audit for paid-up capital of Rs10cr+,0.5
+A286,Rainwater harvesting / recharge evidence,Groundwater abstraction,GAP,,,
+A287,Hazardous chemical inventory / safety data sheets,Hazardous chemicals and emergency planning,MATCHED,IND-CHM-01,MSIHC Rules storage of hazardous chemicals,0.56
+A288,Site notification / safety report,Hazardous chemicals and emergency planning,MATCHED,IND-CHM-01,MSIHC Rules storage of hazardous chemicals,0.86
+A289,Onsite emergency plan / drill record,Hazardous chemicals and emergency planning,MATCHED,IND-CHM-01,MSIHC Rules storage of hazardous chemicals,0.62
+A290,Major-accident report,Hazardous chemicals and emergency planning,MATCHED,IND-CHM-01,MSIHC Rules storage of hazardous chemicals,0.5
+A291,Public liability insurance policy,Public liability insurance,MATCHED,CS-203,Insurance/D&O/public liability,1.0
+A292,ERF contribution / payment evidence,Public liability insurance,MATCHED,CS-203,Insurance/D&O/public liability,0.43
+A293,Incident / claim documentation,Public liability insurance,MATCHED,CS-203,Insurance/D&O/public liability,0.5
+A294,Noise measurement / control record,Noise controls,GAP,,,
+A295,Loudspeaker / event permission,Noise controls,GAP,,,
+A296,Equipment acoustic compliance evidence,Noise controls,GAP,,,
+A297,Forest diversion / wildlife permission application,Forest and wildlife project permissions,GAP,CS-115,,0.29
+A298,Mitigation / compensatory compliance record,Forest and wildlife project permissions,GAP,,,
+A299,Clearance-condition report,Forest and wildlife project permissions,GAP,IND-MIN-11,,0.33
+A300,ABS approval / intimation application,Biodiversity access and benefit sharing,GAP,IND-DEF-26,,0.25
+A301,Benefit-sharing agreement / payment evidence,Biodiversity access and benefit sharing,GAP,CS-123,,0.29
+A302,Biological resource access / use record,Biodiversity access and benefit sharing,GAP,,,
+A303,IPR / research-transfer submission,Biodiversity access and benefit sharing,GAP,,,
+A304,FSSAI Form A,Food safety,MATCHED,CS-198,FSSAI licence,1.0
+A305,FSSAI Form B,Food safety,MATCHED,CS-198,FSSAI licence,1.0
+A306,FSSAI Form C,Food safety,MATCHED,CS-198,FSSAI licence,0.75
+A307,FSSAI Form D-1,Food safety,MATCHED,CS-198,FSSAI licence,0.6
+A308,FSSAI Form IX,Food safety,MATCHED,CS-198,FSSAI licence,0.75
+A309,Food testing / traceability / recall records,Food safety,GAP,CS-198,,0.33
+A310,Packer / manufacturer / importer registration,Legal metrology,MATCHED,CS-178,Legal Metrology registration,1.0
+A311,Weighing-instrument verification / stamping certificate,Legal metrology,MATCHED,IND-FDA-10,Verification and stamping of weighing instruments,0.71
+A312,Manufacturer / dealer / repairer licence,Legal metrology,MATCHED,IND-FDA-09,Legal Metrology packer/manufacturer/dealer registration,0.67
+A313,Package-label compliance artwork / check record,Legal metrology,GAP,IND-MDV-08,,0.38
+A314,Prescribed metrology registers / returns,Legal metrology,MATCHED,CS-178,Legal Metrology registration,0.4
+A315,BIS licence / scope-extension application,BIS and quality-control orders,GAP,CS-197,,0.25
+A316,CRS registration / model inclusion,BIS and quality-control orders,GAP,CS-143,,0.25
+A317,Product laboratory test report,BIS and quality-control orders,GAP,IND-FDA-13,,0.29
+A318,Production / marking / fee statements,BIS and quality-control orders,GAP,IND-FDA-13,,0.25
+A319,Surveillance / corrective-action evidence,BIS and quality-control orders,GAP,IND-FDA-13,,0.25
+A320,Drug manufacture / sale / import application,Drugs and cosmetics,MATCHED,IND-PHA-03,Sale licence (retail/wholesale),0.57
+A321,Cosmetics manufacture / import application,Drugs and cosmetics,MATCHED,CS-141,Chemical hazard rules (MSIHC),0.4
+A322,Batch manufacture / testing / distribution record,Drugs and cosmetics,GAP,CS-200,,0.29
+A323,Licence retention-fee / compliance evidence,Drugs and cosmetics,MATCHED,CS-200,Drugs licence,0.43
+A324,Pharmacovigilance / defect / recall report,Drugs and cosmetics,MATCHED,CS-200,Drugs licence,0.4
+A325,MD-3 / MD-7,Medical devices,MATCHED,IND-MDV-01,Medical device manufacturing licence (Class A/B),0.8
+A326,MD-5 / MD-9,Medical devices,MATCHED,IND-MDV-01,Medical device manufacturing licence (Class A/B),0.8
+A327,MD-14,Medical devices,MATCHED,IND-MDV-03,Import licence for devices,1.0
+A328,MD-15,Medical devices,MATCHED,IND-MDV-03,Import licence for devices,1.0
+A329,MD-41 / MD-42,Medical devices,MATCHED,IND-MDV-01,Medical device manufacturing licence (Class A/B),0.6
+A330,Device quality / traceability / vigilance records,Medical devices,MATCHED,IND-MDV-01,Medical device manufacturing licence (Class A/B),0.43
+A331,Insecticide product registration application,Insecticides,MATCHED,IND-AGR-02,Insecticide registration (CIB&RC),0.6
+A332,Manufacture / sale licence application,Insecticides,MATCHED,IND-DEF-06,Arms licence renewal,0.8
+A333,Insecticide stock / sale / batch record,Insecticides,GAP,IND-AGR-01,,0.33
+A334,Prescribed insecticide return / quality report,Insecticides,MATCHED,IND-AGR-01,Insecticides Act licence (manufacture),0.5
+A335,Fertiliser authorisation / dealer memorandum,Fertilisers and seeds,GAP,IND-AGR-06,,0.33
+A336,Seed dealer licence application,Fertilisers and seeds,MATCHED,IND-AGR-06,Seed dealer registration,0.5
+A337,Fertiliser / seed stock and sale registers,Fertilisers and seeds,GAP,IND-AGR-05,,0.29
+A338,Quality / germination / batch test reports,Fertilisers and seeds,GAP,,,
+A339,Prescribed agriculture-input returns,Fertilisers and seeds,GAP,CS-093,,0.33
+A340,Data-processing inventory,Personal data protection,MATCHED,CS-145,DPDP consent and notice,0.8
+A341,not itself a universally prescribed statutory return.,Personal data protection,GAP,CS-145,,0.38
+A342,Notice / consent / permitted-use evidence,Personal data protection,MATCHED,CS-145,DPDP consent and notice,0.62
+A343,Rights / grievance / deletion record,Personal data protection,MATCHED,CS-145,DPDP consent and notice,0.43
+A344,Personal-data breach notification package,Personal data protection,MATCHED,CS-145,DPDP consent and notice,0.5
+A345,Additional designated-fiduciary audit / assessment,Personal data protection,GAP,CS-145,,0.38
+A346,CERT-In incident report,"IT security, SPDI and CERT-In",MATCHED,CS-152,CERT-In incident reporting,0.67
+A347,trigger classification required.,"IT security, SPDI and CERT-In",MATCHED,CS-156,Cyber-security audit for critical information infrastructure,0.5
+A348,CERT-In point-of-contact details,"IT security, SPDI and CERT-In",MATCHED,CS-156,Cyber-security audit for critical information infrastructure,0.5
+A349,ICT security logs,"IT security, SPDI and CERT-In",MATCHED,CS-156,Cyber-security audit for critical information infrastructure,0.57
+A350,Security incident / remediation record,"IT security, SPDI and CERT-In",MATCHED,CS-152,CERT-In incident reporting,0.5
+A351,Applicable SPDI privacy / security policy,"IT security, SPDI and CERT-In",MATCHED,CS-156,Cyber-security audit for critical information infrastructure,0.71
+A352,Terms / user rules / privacy disclosures,Intermediary due diligence,MATCHED,CS-155,Intermediary due diligence,0.43
+A353,Grievance intake and disposal register,Intermediary due diligence,MATCHED,CS-155,Intermediary due diligence,0.57
+A354,Lawful-order / takedown response evidence,Intermediary due diligence,GAP,CS-155,,0.38
+A355,Prescribed intermediary compliance report,Intermediary due diligence,MATCHED,CS-155,Intermediary due diligence,0.6
+A356,Consumer / e-commerce mandatory disclosures,"Consumer protection, e-commerce and direct selling",MATCHED,CS-182,Consumer Protection E-Commerce Rules,0.62
+A357,Consumer grievance / refund / resolution register,"Consumer protection, e-commerce and direct selling",MATCHED,CS-182,Consumer Protection E-Commerce Rules,0.5
+A358,Seller / direct-seller due-diligence evidence,"Consumer protection, e-commerce and direct selling",MATCHED,IND-RET-03,Consumer Protection (E-Commerce) Rules 2020,0.5
+A359,Product safety / recall / authority-response record,"Consumer protection, e-commerce and direct selling",GAP,CS-182,,0.33
+A360,Principal-entity registration,Commercial communications / DLT,GAP,CS-106,,0.33
+A361,Header / content-template registration,Commercial communications / DLT,GAP,,,
+A362,Consent / preference evidence,Commercial communications / DLT,GAP,,,
+A363,Telemarketer chain / campaign compliance log,Commercial communications / DLT,GAP,,,
+A364,Unsolicited-communication complaint response,Commercial communications / DLT,GAP,,,
+A365,Competition risk / conduct review record,Competition and combinations,GAP,FIN-133,,0.33
+A366,Combination notice Form I / II,Competition and combinations,MATCHED,CS-173,Competition Act - combination filing,0.67
+A367,Transaction threshold / exemption memorandum,Competition and combinations,GAP,,,
+A368,Information request / commitment compliance response,Competition and combinations,GAP,CS-156,,0.29
+A369,Entity-specific RBI supervisory return catalogue,RBI banking and NBFC prudential reporting,GAP,FIN-004,,0.33
+A370,Capital / liquidity / asset-quality working papers,RBI banking and NBFC prudential reporting,GAP,FIN-004,,0.36
+A371,RBI governance / event reporting,RBI banking and NBFC prudential reporting,MATCHED,FIN-004,Capital adequacy (Basel III) reporting,0.43
+A372,Regulatory licence / approval applications,RBI banking and NBFC prudential reporting,GAP,FIN-001,,0.33
+A373,CTR,"AML, KYC and FIU reporting",MATCHED,CS-188,PMLA reporting,0.4
+A374,STR,"AML, KYC and FIU reporting",MATCHED,FIN-073,KYC of policyholders and AML/CFT for insurers,0.6
+A375,Other prescribed FIU transaction reports,"AML, KYC and FIU reporting",GAP,IND-STL-05,,0.25
+A376,Customer / beneficial-owner KYC records,"AML, KYC and FIU reporting",GAP,CS-058,,0.38
+A377,Principal officer / designated director particulars,"AML, KYC and FIU reporting",MATCHED,FIN-125,Prevention of Money Laundering registration of principal officer,0.56
+A378,CKYCR submission / update,"AML, KYC and FIU reporting",GAP,IND-PRO-18,,0.29
+A379,Integrated filing: financial / governance,Listed-entity obligations,GAP,FIN-099,,0.33
+A380,Shareholding-pattern filing,Listed-entity obligations,MATCHED,FIN-099,InvIT/REIT LODR compliance,0.4
+A381,Material-event disclosure,Listed-entity obligations,GAP,CS-168,,0.33
+A382,Annual report / corporate-governance disclosures,Listed-entity obligations,MATCHED,FIN-067,Corporate governance guidelines for insurers,0.5
+A383,BRSR / applicable assurance disclosure,Listed-entity obligations,GAP,FIN-099,,0.33
+A384,Related-party transaction disclosure,Listed-entity obligations,MATCHED,CS-019,Related party transactions approval and disclosure,0.43
+A385,Structured digital database (SDD),Insider trading controls,MATCHED,CS-169,SEBI PIT compliance,0.86
+A386,Designated-person / connected-person records,Insider trading controls,GAP,CS-169,,0.29
+A387,Trading-window / pre-clearance records,Insider trading controls,MATCHED,FIN-111,SEBI PIT Regulations structured digital database,0.43
+A388,Insider transaction / code-violation disclosure,Insider trading controls,MATCHED,CS-169,SEBI PIT compliance,0.43
+A389,SAST acquisition / disposal / encumbrance disclosure,Securities acquisitions and capital issues,GAP,CS-036,,0.22
+A390,Open-offer announcement / offer documents,Securities acquisitions and capital issues,GAP,CS-036,,0.38
+A391,Issue offer document / placement memorandum,Securities acquisitions and capital issues,MATCHED,CS-036,"Private placement offer (PAS-4/PAS-5, PAS-6)",0.44
+A392,Allotment / post-issue / proceeds reporting,Securities acquisitions and capital issues,MATCHED,CS-037,Dematerialisation of securities,0.44
+A393,IRDAI financial / solvency return catalogue,Insurance regulatory compliance,MATCHED,FIN-066,Annual accounts and audit of insurers,0.43
+A394,Product / distribution / licence submissions,Insurance regulatory compliance,GAP,CS-059,,0.29
+A395,Claims / grievance prescribed reporting,Insurance regulatory compliance,MATCHED,IND-TEL-05,TRAI Telecom Consumers Protection compliance,0.43
+A396,Regulatory audit / actuarial certifications,Insurance regulatory compliance,GAP,CS-049,,0.33
+A397,RERA project / agent registration,Real estate regulation,MATCHED,IND-RE-01,RERA project registration,0.83
+A398,Project progress / status update,Real estate regulation,MATCHED,IND-RE-01,RERA project registration,0.5
+A399,Architect / engineer / CA certificates,Real estate regulation,GAP,IND-RE-01,,0.33
+A400,Project account annual audit,Real estate regulation,MATCHED,IND-RE-01,RERA project registration,0.6
+A401,Maharashtra Forms 1 / 2 / 3 / 5,Real estate regulation,MATCHED,CS-018,Statutory registers maintenance,0.43
+A402,current version and other states require validation.,Real estate regulation,GAP,IND-RE-01,,0.25
+A403,Clinical establishment / hospital registration,Healthcare establishment licensing,MATCHED,IND-HSP-01,Clinical Establishment registration,0.5
+A404,Clinical / service standards compliance record,Healthcare establishment licensing,GAP,CS-016,,0.25
+A405,Prescribed establishment return,Healthcare establishment licensing,MATCHED,FIN-023,Small finance bank licence and conditions,0.5
+A406,Professional credentials / facility inspection evidence,Healthcare establishment licensing,GAP,CS-139,,0.25
+A407,FC-3A,Foreign contribution,MATCHED,IND-NGO-01,FCRA registration/prior permission,1.0
+A408,FC-3B,Foreign contribution,MATCHED,IND-NGO-01,FCRA registration/prior permission,1.0
+A409,FC-3C,Foreign contribution,MATCHED,CS-063,"FCRA registration, annual return (FC-4) and quarterly disclosure",0.75
+A410,FC-4,Foreign contribution,MATCHED,CS-063,"FCRA registration, annual return (FC-4) and quarterly disclosure",1.0
+A411,FC-6 change forms,Foreign contribution,MATCHED,CS-063,"FCRA registration, annual return (FC-4) and quarterly disclosure",0.6
+A412,Foreign contribution accounts / utilisation records,Foreign contribution,MATCHED,CS-063,"FCRA registration, annual return (FC-4) and quarterly disclosure",0.4
+A413,SEZ Letter of Approval / extension,Special economic zones,GAP,,,
+A414,Annual Performance Report,Special economic zones,GAP,,,
+A415,Net foreign exchange computation,Special economic zones,GAP,FIN-022,,0.29
+A416,Bond / legal undertaking and movement records,Special economic zones,GAP,,,
+A417,SEZ customs / service reporting submissions,Special economic zones,GAP,IND-LOG-04,,0.25
